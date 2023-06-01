@@ -3,6 +3,7 @@ import TopBanner from './TopBanner'
 import About from './About'
 import { ParallaxLayer } from '@react-spring/parallax'
 import Services from './Services'
+import NavBar from './NavBar';
 
 export function ContentLayer() {
   return (
@@ -11,6 +12,7 @@ export function ContentLayer() {
       speed={0.5}
       style={{ zIndex: 1 }}
     >
+      <NavBar />
       <TopBanner />
       <About />
       <Services />

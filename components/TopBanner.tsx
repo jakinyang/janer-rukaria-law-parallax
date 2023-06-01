@@ -5,7 +5,7 @@ import SectionWrapper from './SectionWrapper';
 const TopBanner: React.FC = () => {
   return (
     <SectionWrapper id='topBanner'>
-      <div className="flex w-full justify-around items-center" >
+      <div className="relative top-32 flex w-full justify-around items-center" >
         <Image
           src={"/assets/profile-picture-1.svg"}
           alt="Profile Picture"
@@ -14,9 +14,22 @@ const TopBanner: React.FC = () => {
           className="max-w-md"
         />
         <div className="flex-col">
-            <h1 className="text-4xl font-bold neobrutalist-title flex-1 mb-8">
-              Jane Rukaria
+          <div className='flex'>
+            <h1 className="text-5xl font-bold neobrutalist-title mb-8 mr-3 text-orange-700">
+              Innovating
             </h1>
+            <h1 className="text-5xl font-bold neobrutalist-title mb-8">
+              Solutions
+            </h1>
+          </div>
+          <div className='flex'>
+            <h1 className="text-5xl font-bold neobrutalist-title mb-8 pl-10">
+              for Your Legal
+            </h1>
+            <h1 className="text-5xl font-bold neobrutalist-title mb-8 ml-3 text-orange-700">
+              Needs
+            </h1>
+          </div>
             <h2 className="text-2xl neobrutalist-title max-w-sm text-right mb-8">
               Lorem ipsum dolor sit amet
             </h2>
