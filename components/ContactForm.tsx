@@ -1,42 +1,94 @@
 import React, { useState } from 'react';
+import Modal from 'react-modal';
+import SectionWrapper from './SectionWrapper';
 
-interface FormData {
-  name: string;
-  email: string;
-  message: string;
-}
+const customStyles = {
+  content: {
+    top: '50%',
+    left: '50%',
+    right: 'auto',
+    bottom: 'auto',
+    marginRight: '-50%',
+    transform: 'translate(-50%, -50%)',
+    backgroundColor: '#333',
+    borderRadius: '8px',
+    padding: '2rem',
+    width: "50%",
+  },
+};
+
+Modal.setAppElement('#__next');
 
 const ContactForm: React.FC = () => {
-  const [formData, setFormData] = useState<FormData>({
-    name: '',
-    email: '',
-    message: '',
-  });
+  const [modalIsOpen, setModalIsOpen] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
+  function openModal() {
+    setModalIsOpen(true);
+  }
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    console.log(formData);
-    // Handle form submission logic here
-  };
+  function closeModal() {
+    setModalIsOpen(false);
+  }
 
   return (
-    <div>
-      <h2>Contact Us</h2>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="name">Name:</label>
-        <input type="text" id="name" name="name" value={formData.name} onChange={handleChange} />
-        <label htmlFor="email">Email:</label>
-        <input type="email" id="email" name="email" value={formData.email} onChange={handleChange} />
-        <label htmlFor="message">Message:</label>
-        <textarea id="message" name="message" value={formData.message} onChange={handleChange} />
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
+    <SectionWrapper id='contactForm'>
+      <div className="w-full flex flex-col items-center mt-8">
+        <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
+        <button className="neobrutalist px-4 py-2" onClick={openModal}>
+          Open Contact Form
+        </button>
+        <Modal
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          style={customStyles}
+          contentLabel="Contact Form"
+        >
+          <h3 className="text-xl font-bold mb-4">Contact Form</h3>
+          <form>
+            <div className="mb-4">
+              <label className="block text-gray-300 text-sm mb-2" htmlFor="name">
+                Name
+              </label>
+              <input
+                className="neobrutalist w-full px-2 py-1"
+                type="text"
+                id="name"
+              />
+            </div>
+            <div className="mb-4">
+              <label className="block text-gray-300 text-sm mb-2" htmlFor="email">
+                Email
+              </label>
+              <input
+                className="neobrutalist w-full px-2 py-1"
+                type="email"
+                id="email"
+              />
+            </div>
+            <div className="mb-4">
+              <label
+                className="block text-gray-300 text-sm mb-2"
+                htmlFor="message"
+              >
+                Message
+              </label>
+              <textarea
+                className="neobrutalist w-full px-2 py-1"
+                id="message"
+                rows={4}
+              ></textarea>
+            </div>
+            <button
+              className="neobrutalist px-4 py-2"
+              type="submit"
+              onClick={closeModal}
+            >
+              Send
+            </button>
+          </form>
+        </Modal>
+      </div>
+    </SectionWrapper>
   );
 };
 
