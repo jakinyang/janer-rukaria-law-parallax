@@ -11,6 +11,9 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+        "testimonials": "url('/images/background-yellow-testimonials.png')",
+        "testimonials2": "url('/images/wave.jpeg')",
+        "testimonials3": "url('/images/slider-testimonial-background.jpeg')"
       },
     },
     fontFamily: {

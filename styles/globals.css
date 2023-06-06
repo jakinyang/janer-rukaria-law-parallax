@@ -69,3 +69,15 @@ body {
 h1 {
   font-family: 'DM Serif Display Regular'
 }
+
+div.swiper-button-prev {
+  color: rgb(145, 161, 169);
+}
+
+div.swiper-button-next {
+  color: rgb(145, 161, 169);
+}
+
+span.swiper-pagination-bullet-active {
+  background: rgb(145, 161, 169);
+}
