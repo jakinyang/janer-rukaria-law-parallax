@@ -15,7 +15,7 @@ const NavBar: React.FC = () => {
   return (
     <nav className="fixed top-0 left-0 w-full bg-black p-4">
       <div className="flex justify-between">
-        <Image 
+        <Image
           src="/../public/images/logo-nav.png"
           width={150}
           height={150}
@@ -23,24 +23,33 @@ const NavBar: React.FC = () => {
         />
         <ul className="flex justify-end space-x-4">
           {navItems.map((item) => (
-            <li key={item.id}>
+            <li
+              key={item.id}
+              className="font-serif text-xl p-2 cursor-pointer hover:text-gray-400"
+              // onClick={() => {
+              //   parallax.current.scrollTo(item.id);
+              // }}
+            >
+              {/* <h6>
+                {item.label}
+              </h6> */}
               <Link
                 to={item.id}
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
-                className="font-serif text-xl p-2 cursor-pointer"
+                className="font-serif text-xl p-2 cursor-pointer hover:text-gray-400"
               >
-                <p className='neobrutalist-nav px-7'>
-                  {item.label}
-                </p>
-              </Link>
+              <p className='neobrutalist-nav px-7'>
+                {item.label}
+              </p>
+            </Link>
             </li>
           ))}
-        </ul>
-      </div>
-    </nav>
+      </ul>
+    </div>
+    </nav >
   );
 };
 
