@@ -7,7 +7,11 @@ const Services: React.FC = () => {
       <div className="grid grid-cols-3 items-center justify-center mt-10 gap-10 2xl:text-xl">
         <div className="bg-white bg-opacity-90 hover:bg-opacity-100 shadow-xl xl:h-[55vh] lg:h-[70vh] md:h-[50vh] rounded-xl flex flex-col items-center p-10 2xl:p-14 text-center">
           <div>
-            <img src="/../images/icons8-passion-64.png" alt="" className="w-14" />
+            <img
+              src="/../images/icons8-passion-64.png"
+              alt=""
+              className="w-14"
+            />
           </div>
           <div className="mt-3 mb-5 font-bookmania2 text-xl text-gray-800 font-semibold">
             <p>Service Number One</p>
@@ -75,7 +79,11 @@ const Services: React.FC = () => {
         </div>
         <div className="bg-white bg-opacity-90 hover:bg-opacity-100 shadow-xl xl:h-[55vh] lg:h-[70vh] md:h-[50vh] rounded-xl flex flex-col items-center p-10 2xl:p-14 text-center">
           <div>
-            <img src="/../images/icons8-passion-64.png" alt="" className="w-14" />
+            <img
+              src="/../images/icons8-passion-64.png"
+              alt=""
+              className="w-14"
+            />
           </div>
           <div className="mt-3 mb-5 font-bookmania2 text-xl text-gray-800 font-semibold">
             <p>Service Number Five</p>
@@ -107,6 +115,12 @@ const Services: React.FC = () => {
             tile slow-carb.
           </div>
         </div>
+      </div>
+      <div className="flex flex-col items-center mt-10">
+        <p>Would like to know more about our services?</p>
+        <button className="mt-5 bg-transparent hover:bg-white text-white font-semibold hover:text-gray-800 py-2 px-4 border border-white hover:border-transparent rounded">
+          Contact Jane Rukaria Law
+        </button>
       </div>
     </div>
   );
