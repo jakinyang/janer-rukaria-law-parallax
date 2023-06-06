@@ -1,14 +1,113 @@
-import React from 'react';
+import React from "react";
 
 const Services: React.FC = () => {
   return (
-    <div>
-      <h2>Our Services</h2>
-      <ul>
-        <li>Service 1</li>
-        <li>Service 2</li>
-        <li>Service 3</li>
-      </ul>
+    <div className="flex flex-col w-full pt-48 px-40 items-center">
+      <h2 className="font-serif font-semibold text-4xl">Our Services</h2>
+      <div className="grid grid-cols-3 items-center justify-center mt-10 gap-10 2xl:text-xl">
+        <div className="bg-white bg-opacity-90 hover:bg-opacity-100 shadow-xl xl:h-[55vh] lg:h-[70vh] md:h-[50vh] rounded-xl flex flex-col items-center p-10 2xl:p-14 text-center">
+          <div>
+            <img src="/../images/icons8-passion-64.png" alt="" className="w-14" />
+          </div>
+          <div className="mt-3 mb-5 font-bookmania2 text-xl text-gray-800 font-semibold">
+            <p>Service Number One</p>
+          </div>
+          <div className="text-gray-800 font-novatest">
+            Im baby church-key schlitz paleo slow-carb shoreditch, pabst
+            crucifix fixie solarpunk fam. Bruh brunch tofu raw denim scenester
+            keffiyeh kitsch gentrify shoreditch before they sold out bicycle
+            rights knausgaard pug shabby chic venmo.
+            <br />
+            Yes plz brunch drinking vinegar crucifix butcher pinterest subway
+            tile slow-carb.
+          </div>
+        </div>
+        <div className="bg-white bg-opacity-90 hover:bg-opacity-100 shadow-xl xl:h-[55vh] lg:h-[70vh] md:h-[50vh] rounded-xl flex flex-col items-center p-10 2xl:p-14 text-center">
+          <div>
+            <img src="/../images/collaboration.png" alt="" className="w-14" />
+          </div>
+          <div className="mt-3 mb-5 font-bookmania2 text-xl text-gray-800 font-semibold">
+            <p>Service Number Two</p>
+          </div>
+          <div className="text-gray-800 font-novatest">
+            Im baby church-key schlitz paleo slow-carb shoreditch, pabst
+            crucifix fixie solarpunk fam. Bruh brunch tofu raw denim scenester
+            keffiyeh kitsch gentrify shoreditch before they sold out bicycle
+            rights knausgaard pug shabby chic venmo.
+            <br />
+            Yes plz brunch drinking vinegar crucifix butcher pinterest subway
+            tile slow-carb.
+          </div>
+        </div>
+        <div className="bg-white bg-opacity-90 hover:bg-opacity-100 shadow-xl xl:h-[55vh] lg:h-[70vh] md:h-[50vh] rounded-xl flex flex-col items-center p-10 2xl:p-14 text-center">
+          <div>
+            <img src="/../images/curious.png" alt="" className="w-14" />
+          </div>
+          <div className="mt-3 mb-5 font-bookmania2 text-xl text-gray-800 font-semibold">
+            <p>Service Number Three</p>
+          </div>
+          <div className="text-gray-800 font-novatest">
+            Im baby church-key schlitz paleo slow-carb shoreditch, pabst
+            crucifix fixie solarpunk fam. Bruh brunch tofu raw denim scenester
+            keffiyeh kitsch gentrify shoreditch before they sold out bicycle
+            rights knausgaard pug shabby chic venmo.
+            <br />
+            Yes plz brunch drinking vinegar crucifix butcher pinterest subway
+            tile slow-carb.
+          </div>
+        </div>
+        <div className="bg-white bg-opacity-90 hover:bg-opacity-100 shadow-xl xl:h-[55vh] lg:h-[70vh] md:h-[50vh] rounded-xl flex flex-col items-center p-10 2xl:p-14 text-center">
+          <div>
+            <img src="/../images/curious.png" alt="" className="w-14" />
+          </div>
+          <div className="mt-3 mb-5 font-bookmania2 text-xl text-gray-800 font-semibold">
+            <p>Service Number Four</p>
+          </div>
+          <div className="text-gray-800 font-novatest">
+            Im baby church-key schlitz paleo slow-carb shoreditch, pabst
+            crucifix fixie solarpunk fam. Bruh brunch tofu raw denim scenester
+            keffiyeh kitsch gentrify shoreditch before they sold out bicycle
+            rights knausgaard pug shabby chic venmo.
+            <br />
+            Yes plz brunch drinking vinegar crucifix butcher pinterest subway
+            tile slow-carb.
+          </div>
+        </div>
+        <div className="bg-white bg-opacity-90 hover:bg-opacity-100 shadow-xl xl:h-[55vh] lg:h-[70vh] md:h-[50vh] rounded-xl flex flex-col items-center p-10 2xl:p-14 text-center">
+          <div>
+            <img src="/../images/icons8-passion-64.png" alt="" className="w-14" />
+          </div>
+          <div className="mt-3 mb-5 font-bookmania2 text-xl text-gray-800 font-semibold">
+            <p>Service Number Five</p>
+          </div>
+          <div className="text-gray-800 font-novatest">
+            Im baby church-key schlitz paleo slow-carb shoreditch, pabst
+            crucifix fixie solarpunk fam. Bruh brunch tofu raw denim scenester
+            keffiyeh kitsch gentrify shoreditch before they sold out bicycle
+            rights knausgaard pug shabby chic venmo.
+            <br />
+            Yes plz brunch drinking vinegar crucifix butcher pinterest subway
+            tile slow-carb.
+          </div>
+        </div>
+        <div className="bg-white bg-opacity-90 hover:bg-opacity-100 shadow-xl xl:h-[55vh] lg:h-[70vh] md:h-[50vh] rounded-xl flex flex-col items-center p-10 2xl:p-14 text-center">
+          <div>
+            <img src="/../images/collaboration.png" alt="" className="w-14" />
+          </div>
+          <div className="mt-3 mb-5 font-bookmania2 text-xl text-gray-800 font-semibold">
+            <p>Service Number Six</p>
+          </div>
+          <div className="text-gray-800 font-novatest">
+            Im baby church-key schlitz paleo slow-carb shoreditch, pabst
+            crucifix fixie solarpunk fam. Bruh brunch tofu raw denim scenester
+            keffiyeh kitsch gentrify shoreditch before they sold out bicycle
+            rights knausgaard pug shabby chic venmo.
+            <br />
+            Yes plz brunch drinking vinegar crucifix butcher pinterest subway
+            tile slow-carb.
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

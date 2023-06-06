@@ -32,7 +32,7 @@ const NavBar: React.FC = () => {
                 duration={500}
                 className="font-serif text-xl p-2 cursor-pointer"
               >
-                <p className='neobrutalist-nav px-7'>
+                <p className='neobrutalist-nav px-7 font-sans'>
                   {item.label}
                 </p>
               </Link>
