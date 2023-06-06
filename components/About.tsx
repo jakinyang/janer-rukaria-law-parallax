@@ -5,7 +5,7 @@ import SectionWrapper from "./SectionWrapper";
 const About: React.FC = () => {
   return (
     <SectionWrapper id="about">
-      <div className="flex w-full pt-48 justify-around items-center">
+      <div className="flex w-full pt-80 justify-around items-center">
         <div className="flex-col">
           <h2 className="brutalist-title text-4xl max-w-lg mb-8 font-serif font-semibold text-gray-800">
             <a className="text-white">About</a> Jane Rukaria Law

@@ -2,7 +2,7 @@ import React from "react";
 
 const Services: React.FC = () => {
   return (
-    <div className="flex flex-col w-full pt-48 px-40 items-center">
+    <div className="flex flex-col w-full pt-80 px-40 items-center">
       <h2 className="font-serif font-semibold text-5xl">Our Services</h2>
       <div className="grid grid-cols-3 items-center justify-center mt-10 gap-10 2xl:text-xl">
         <div className="bg-white bg-opacity-90 hover:bg-opacity-100 shadow-xl xl:h-[55vh] lg:h-[70vh] md:h-[50vh] rounded-xl flex flex-col items-center p-10 2xl:p-14 text-center">

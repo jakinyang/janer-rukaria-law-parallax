@@ -2,7 +2,7 @@ import React from "react";
 
 const Resources: React.FC = () => {
   return (
-    <div className="flex flex-col w-full pt-48 px-40 items-center">
+    <div className="flex flex-col w-full pt-80 px-40 items-center">
       <h2 className="font-serif font-semibold text-5xl pb-10">Resources</h2>
       <div className="grid grid-cols-2 gap-5">
         <div className="flex gap-5 items-start bg-white">

@@ -6,6 +6,7 @@ import Services from './Services'
 import NavBar from './NavBar';
 import Resources from './Resources';
 import Testimonials from './Testimonials';
+import ContactForm from './ContactForm';
 
 export function ContentLayer() {
   return (
@@ -20,6 +21,7 @@ export function ContentLayer() {
       <Services />
       <Resources />
       <Testimonials />
+      <ContactForm />
     </ParallaxLayer>
   )
 }
