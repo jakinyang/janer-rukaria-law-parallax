@@ -4,6 +4,7 @@ import About from './About'
 import { ParallaxLayer } from '@react-spring/parallax'
 import Services from './Services'
 import NavBar from './NavBar';
+import Resources from './Resources';
 
 export function ContentLayer() {
   return (
@@ -16,6 +17,7 @@ export function ContentLayer() {
       <TopBanner />
       <About />
       <Services />
+      <Resources />
     </ParallaxLayer>
   )
 }
