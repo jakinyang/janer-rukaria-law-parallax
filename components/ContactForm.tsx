@@ -64,7 +64,7 @@ const ContactForm: React.FC = () => {
         <div className="container mx-auto my-4 px-4 lg:px-20">
           <div className="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl">
             <div className="flex">
-              <h1 className="font-bold text-5xl">
+              <h1 className="font-bold text-3xl md:text-5xl">
                 Send us a message
               </h1>
             </div>
@@ -108,7 +108,7 @@ const ContactForm: React.FC = () => {
 
           <div className="w-full lg:-mt-[29rem] lg:w-2/6 px-8 py-12 ml-auto bg-blue-900 rounded-2xl">
             <div className="flex flex-col text-white">
-              <h1 className="font-bold text-4xl my-4">
+              <h1 className="font-bold text-3xl md:text-4xl my-4">
                 Drop in our office
               </h1>
               <p className="text-gray-400">

@@ -87,7 +87,7 @@ const Testimonials: React.FC = () => {
             <div className="bg-[#F8F8F8] bg-testimonials3 bg-contain bg-center bg-no-repeat h-[300px] rounded-xl text-gray-800">
               <div className="flex flex-col items-center justify-center pt-10">
                 <p className="w-[95%] md:w-[60%] md:pt-5">
-                  <a className="font-semibold md:text-2xl font-serif">
+                  <a className="font-semibold text-xl md:text-2xl font-serif">
                     Amazing Service!
                   </a>{" "}
                   Im baby church-key schlitz paleo slow-carb shoreditch, pabst
@@ -95,7 +95,7 @@ const Testimonials: React.FC = () => {
                   scenester keffiyeh kitsch gentrify shoreditch before they sold
                   out bicycle rights knausgaard pug shabby chic venmo.
                 </p>
-                <div className="w-[95%] md:w-[60%] flex flex-col items-start md:pt-5">
+                <div className="w-[95%] md:w-[60%] flex flex-col items-start pt-3 md:pt-5">
                   <Ratings />
                   <h2 className="md:text-xl">Jackson Powers</h2>
                   <h3 className="md:pb-5">Enterpreneur</h3>
@@ -107,7 +107,7 @@ const Testimonials: React.FC = () => {
           <div className="bg-[#F8F8F8] bg-testimonials3 bg-contain bg-center bg-no-repeat h-[300px] rounded-xl text-gray-800">
               <div className="flex flex-col items-center justify-center pt-10">
                 <p className="w-[95%] md:w-[60%] md:pt-5">
-                  <a className="font-semibold md:text-2xl font-serif">
+                  <a className="font-semibold text-xl md:text-2xl font-serif">
                     Amazing Service!
                   </a>{" "}
                   Im baby church-key schlitz paleo slow-carb shoreditch, pabst
@@ -115,7 +115,7 @@ const Testimonials: React.FC = () => {
                   scenester keffiyeh kitsch gentrify shoreditch before they sold
                   out bicycle rights knausgaard pug shabby chic venmo.
                 </p>
-                <div className="w-[95%] md:w-[60%] flex flex-col items-start md:pt-5">
+                <div className="w-[95%] md:w-[60%] flex flex-col items-start pt-3 md:pt-5">
                   <Ratings />
                   <h2 className="md:text-xl">Jackson Powers</h2>
                   <h3 className="md:pb-5">Enterpreneur</h3>
@@ -127,7 +127,7 @@ const Testimonials: React.FC = () => {
           <div className="bg-[#F8F8F8] bg-testimonials3 bg-contain bg-center bg-no-repeat h-[300px] rounded-xl text-gray-800">
               <div className="flex flex-col items-center justify-center pt-10">
                 <p className="w-[95%] md:w-[60%] md:pt-5">
-                  <a className="font-semibold md:text-2xl font-serif">
+                  <a className="font-semibold text-xl md:text-2xl font-serif">
                     Amazing Service!
                   </a>{" "}
                   Im baby church-key schlitz paleo slow-carb shoreditch, pabst
@@ -135,7 +135,7 @@ const Testimonials: React.FC = () => {
                   scenester keffiyeh kitsch gentrify shoreditch before they sold
                   out bicycle rights knausgaard pug shabby chic venmo.
                 </p>
-                <div className="w-[95%] md:w-[60%] flex flex-col items-start md:pt-5">
+                <div className="w-[95%] md:w-[60%] flex flex-col items-start pt-3 md:pt-5">
                   <Ratings />
                   <h2 className="md:text-xl">Jackson Powers</h2>
                   <h3 className="md:pb-5">Enterpreneur</h3>

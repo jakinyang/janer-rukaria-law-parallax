@@ -12,7 +12,7 @@ const ResourceOne: React.FC = () => {
     <div className="flex flex-col md:flex-row md:gap-5 md:items-start bg-white">
       <img
         src="/../images/sumbnail.jpeg"
-        className="resourceImg h-24 md:h-auto md:w-[35%]"
+        className="resourceImg h-36 md:h-auto md:w-[35%]"
       />
       <div className="px-3 md:w-[55%] py-5 text-gray-800">
         <h3 className="font-semibold text-xl pb-5 cursor-pointer hover:underline">
@@ -47,7 +47,7 @@ const ResourceOne: React.FC = () => {
 const Resources: React.FC = () => {
   return (
     <div className="flex flex-col w-full pt-10 md:pt-80 px-10 lg:px-40 items-center">
-      <h2 className="font-serif font-semibold text-5xl pb-10">Resources</h2>
+      <h2 className="font-serif font-semibold text-3xl md:text-5xl pb-10">Resources</h2>
       <div className="w-full md:hidden">
         <Swiper
           // install Swiper modules
