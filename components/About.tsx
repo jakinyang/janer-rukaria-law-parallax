@@ -27,7 +27,7 @@ const About: React.FC = () => {
             Contact Jane Rukaria Law
           </button>
         </div>
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <Image
             src={"/assets/profile-picture-1.svg"}
             alt="Jane Rukaria profile picture"
