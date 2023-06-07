@@ -7,7 +7,7 @@ const About: React.FC = () => {
     <SectionWrapper id="about">
       <div className="flex w-full pt-80 justify-around items-center">
         <div className="flex-col">
-          <h2 className="brutalist-title text-4xl max-w-lg mb-8 font-serif font-semibold text-gray-800">
+          <h2 className="brutalist-title text-2xl md:text-4xl max-w-lg mb-8 font-serif font-semibold text-gray-800">
             <a className="text-white">About</a> Jane Rukaria Law
           </h2>
           <p className="brutalist-title text-xl max-w-xl mb-8">
@@ -23,17 +23,19 @@ const About: React.FC = () => {
             bespoke beard master cleanse, artisan glossier vinyl cloud bread
             8-bit tacos pop-up.
           </p>
-          <button className="bg-transparent hover:bg-gray-800 text-gray-800 font-semibold hover:text-white py-2 px-4 border border-gray-800 hover:border-transparent rounded">
+          <button className="mt-5 bg-transparent hover:bg-white text-white font-semibold hover:text-gray-800 py-2 px-4 border border-white hover:border-transparent rounded">
             Contact Jane Rukaria Law
           </button>
         </div>
-        <Image
-          src={"/assets/profile-picture-1.svg"}
-          alt="Jane Rukaria profile picture"
-          width={400}
-          height={400}
-          className="max-w-md"
-        />
+        <div className="hidden md:block">
+          <Image
+            src={"/assets/profile-picture-1.svg"}
+            alt="Jane Rukaria profile picture"
+            width={400}
+            height={400}
+            className="max-w-md"
+          />
+        </div>
       </div>
     </SectionWrapper>
   );

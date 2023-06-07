@@ -78,6 +78,20 @@ div.swiper-button-next {
   color: rgb(145, 161, 169);
 }
 
+@media only screen and (max-width: 480px){
+	div.swiper-button-prev {
+    display: none;
+  }
+  
+  div.swiper-button-next {
+    display: none;
+  }
+}
+
 span.swiper-pagination-bullet-active {
   background: rgb(145, 161, 169);
+}
+
+img.resourceImg {
+  object-fit: cover;
 }

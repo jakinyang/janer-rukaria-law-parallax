@@ -2,10 +2,10 @@ import React from "react";
 
 const Services: React.FC = () => {
   return (
-    <div className="flex flex-col w-full pt-80 px-40 items-center">
+    <div className="flex flex-col w-full pt-10 md:pt-80 px-5 md:px-40 items-center">
       <h2 className="font-serif font-semibold text-5xl">Our Services</h2>
-      <div className="grid grid-cols-3 items-center justify-center mt-10 gap-10 2xl:text-xl">
-        <div className="bg-white bg-opacity-90 hover:bg-opacity-100 shadow-xl xl:h-[55vh] lg:h-[70vh] md:h-[50vh] rounded-xl flex flex-col items-center p-10 2xl:p-14 text-center">
+      <div className="grid grid-cols-1 lg:grid-cols-3 items-center justify-center mt-10 gap-5 md:p-10 2xl:text-xl">
+        <div className="bg-white bg-opacity-90 hover:bg-opacity-100 shadow-xl  rounded-xl flex flex-col items-center p-5 md:p-10 2xl:p-14 text-center">
           <div>
             <img
               src="/../images/icons8-passion-64.png"
@@ -26,7 +26,7 @@ const Services: React.FC = () => {
             tile slow-carb.
           </div>
         </div>
-        <div className="bg-white bg-opacity-90 hover:bg-opacity-100 shadow-xl xl:h-[55vh] lg:h-[70vh] md:h-[50vh] rounded-xl flex flex-col items-center p-10 2xl:p-14 text-center">
+        <div className="bg-white bg-opacity-90 hover:bg-opacity-100 shadow-xl rounded-xl flex flex-col items-center p-5 md:p-10 2xl:p-14 text-center">
           <div>
             <img src="/../images/collaboration.png" alt="" className="w-14" />
           </div>
@@ -43,7 +43,7 @@ const Services: React.FC = () => {
             tile slow-carb.
           </div>
         </div>
-        <div className="bg-white bg-opacity-90 hover:bg-opacity-100 shadow-xl xl:h-[55vh] lg:h-[70vh] md:h-[50vh] rounded-xl flex flex-col items-center p-10 2xl:p-14 text-center">
+        <div className="bg-white bg-opacity-90 hover:bg-opacity-100 shadow-xl rounded-xl flex flex-col items-center p-5 md:p-10 2xl:p-14 text-center">
           <div>
             <img src="/../images/curious.png" alt="" className="w-14" />
           </div>
@@ -60,7 +60,7 @@ const Services: React.FC = () => {
             tile slow-carb.
           </div>
         </div>
-        <div className="bg-white bg-opacity-90 hover:bg-opacity-100 shadow-xl xl:h-[55vh] lg:h-[70vh] md:h-[50vh] rounded-xl flex flex-col items-center p-10 2xl:p-14 text-center">
+        <div className="bg-white bg-opacity-90 hover:bg-opacity-100 shadow-xl rounded-xl flex flex-col items-center p-5 md:p-10 2xl:p-14 text-center">
           <div>
             <img src="/../images/curious.png" alt="" className="w-14" />
           </div>
@@ -77,7 +77,7 @@ const Services: React.FC = () => {
             tile slow-carb.
           </div>
         </div>
-        <div className="bg-white bg-opacity-90 hover:bg-opacity-100 shadow-xl xl:h-[55vh] lg:h-[70vh] md:h-[50vh] rounded-xl flex flex-col items-center p-10 2xl:p-14 text-center">
+        <div className="bg-white bg-opacity-90 hover:bg-opacity-100 shadow-xl rounded-xl flex flex-col items-center p-5 md:p-10 2xl:p-14 text-center">
           <div>
             <img
               src="/../images/icons8-passion-64.png"
@@ -98,7 +98,7 @@ const Services: React.FC = () => {
             tile slow-carb.
           </div>
         </div>
-        <div className="bg-white bg-opacity-90 hover:bg-opacity-100 shadow-xl xl:h-[55vh] lg:h-[70vh] md:h-[50vh] rounded-xl flex flex-col items-center p-10 2xl:p-14 text-center">
+        <div className="bg-white bg-opacity-90 hover:bg-opacity-100 shadow-xl rounded-xl flex flex-col items-center p-5 md:p-10 2xl:p-14 text-center">
           <div>
             <img src="/../images/collaboration.png" alt="" className="w-14" />
           </div>

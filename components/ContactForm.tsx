@@ -60,7 +60,7 @@ const ContactForm: React.FC = () => {
         // <button type="submit">Send Message</button>
         //{" "}
       </form> */}
-      <div className="flex justify-center items-center w-screen h-screen ">
+      <div className="mt-60 md:mt-0 flex justify-center items-center w-screen h-screen ">
         <div className="container mx-auto my-4 px-4 lg:px-20">
           <div className="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl">
             <div className="flex">
