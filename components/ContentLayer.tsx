@@ -4,9 +4,10 @@ import About from './About'
 import { ParallaxLayer } from '@react-spring/parallax'
 import Services from './Services'
 import NavBar from './NavBar';
-import Resources from './Resources'
-import Testimonials from './Testimonials'
-import ContactForm from './ContactForm'
+import Resources from './Resources';
+import Testimonials from './Testimonials';
+import ContactForm from './ContactForm';
+import Footer from './Footer';
 
 export function ContentLayer() {
   return (
@@ -22,6 +23,7 @@ export function ContentLayer() {
       <Resources />
       <Testimonials />
       <ContactForm />
+      <Footer />
     </ParallaxLayer>
   )
 }
