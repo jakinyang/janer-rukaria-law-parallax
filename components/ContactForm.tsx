@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 
-Modal.setAppElement('#__next');
+interface FormData {
+  name: string;
+  email: string;
+  message: string;
+}
 
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState<FormData>({
@@ -16,9 +20,11 @@ const ContactForm: React.FC = () => {
     setFormData({ ...formData, [name]: value });
   };
 
-  function closeModal() {
-    setModalIsOpen(false);
-  }
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    console.log(formData);
+    // Handle form submission logic here
+  };
 
   return (
     <div>
