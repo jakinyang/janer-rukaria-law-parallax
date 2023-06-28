@@ -17,8 +17,8 @@ module.exports = {
       },
     },
     fontFamily: {
-      serif: "DM Serif Display Regular",
-      sans: "DM Sans",
+      serif:["Alegreya", "serif"],
+      sans: ["Lato", "sans-serif"],
     },
   },
   plugins: [],

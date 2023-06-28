@@ -5,33 +5,29 @@ import SectionWrapper from "./SectionWrapper";
 const TopBanner: React.FC = () => {
   return (
     <SectionWrapper id="topBanner">
-      <div className="relative top-32 flex w-full justify-around items-center">
+      <div className="relative top-32 flex w-full justify-around items-start">
         <div className="hidden md:block">
           <Image
-            src={"/assets/profile-picture-1.svg"}
+            src={"/images/Jane2.png"}
             alt="Profile Picture"
-            width={400}
+            width={600}
             height={400}
-            className="max-w-md"
+            className="max-w-md md:w-[40vw] lg:w-[50vw]"
           />
         </div>
-        <div className="flex-col">
+        <div className="flex-col items-center justify-center pt-20">
           <div className="flex">
-            <h1 className="text-3xl lg:text-5xl font-bold neobrutalist-title mb-8 mr-3 text-orange-700">
-              Innovating <a className="text-white">Solutions</a>
+            <h1 className="text-3xl md:text-4xl lg:text-7xl font-bold neobrutalist-title mb-8">
+            One You Can <a className="text-orange-700">Trust</a>
             </h1>
           </div>
           <div className="flex">
-            <h1 className="text-3xl lg:text-5xl font-bold neobrutalist-title mb-8 pl-10">
-              for Your Legal <a className="text-orange-700">Needs</a>
+            <h1 className="text-3xl md:text-4xl lg:text-7xl font-bold neobrutalist-title mb-8">
+              Your <a className="text-orange-700">Family</a> With
             </h1>
           </div>
-          <h2 className="text-xl lg:text-2xl neobrutalist-title max-w-md mb-8 text-right">
-            Lorem ipsum dolor sit amet
-          </h2>
-          <h2 className="lg:text-xl neobrutalist-title max-w-md mb-8 font-sans text-right">
-            Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum
-            dolor sit amet
+          <h2 className="text-xl lg:text-3xl neobrutalist-title max-w-md mb-8">
+            Welcome to Rukaria Online
           </h2>
         </div>
       </div>
