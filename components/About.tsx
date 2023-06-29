@@ -6,7 +6,7 @@ const About: React.FC = () => {
   return (
     <SectionWrapper id="about">
       <div className="flex w-full pt-80 justify-around items-center">
-        <div className="flex-col bg-white bg-opacity-80 p-16 rounded-tr-[100px] rounded-b-[100px]">
+        <div className="flex-col bg-white bg-opacity-80 p-16 rounded-tl-[100px] rounded-br-[100px]">
           <h2 className="brutalist-title text-3xl md:text-4xl max-w-lg mb-8 font-serif font-semibold text-gray-800">
             <a className="text-gray-800">About</a> Jane Rukaria Law
           </h2>
