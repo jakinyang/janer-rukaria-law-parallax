@@ -8,7 +8,7 @@ const TopBanner: React.FC = () => {
       <div className="relative top-32 flex w-full justify-around items-start">
         <div className="hidden md:block">
           <Image
-            src={"/images/Jane2.png"}
+            src={"/images/jane-nobg2.png"}
             alt="Profile Picture"
             width={600}
             height={400}

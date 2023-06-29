@@ -61,8 +61,8 @@ const ContactForm: React.FC = () => {
         //{" "}
       </form> */}
       <div className="mt-60 md:mt-0 flex justify-center items-center w-screen h-screen ">
-        <div className="container mx-auto my-4 px-4 lg:px-20">
-          <div className="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl">
+        <div className="container mx-auto my-4 px-4">
+          <div className="w-full p-8 my-4 lg:w-8/12 lg:pr-40 mr-auto rounded-2xl">
             <div className="flex">
               <h1 className="font-bold text-3xl md:text-5xl">
                 Send us a message
@@ -106,7 +106,7 @@ const ContactForm: React.FC = () => {
             </div>
           </div>
 
-          <div className="w-full lg:-mt-[29rem] lg:w-2/6 px-8 py-12 ml-auto bg-blue-900 rounded-2xl">
+          <div className="w-full lg:-mt-[29rem] lg:w-5/12 px-8 py-12 ml-auto bg-blue-900 rounded-2xl">
             <div className="flex flex-col text-white">
               <h1 className="font-bold text-3xl md:text-4xl my-4">
                 Drop in our office
@@ -143,14 +143,24 @@ const ContactForm: React.FC = () => {
                 </div>
                 <div className="flex flex-col">
                   <h2 className="text-2xl">Call Us</h2>
-                  <h3>Canada</h3>
-                  <p className="text-gray-400">Phone: +1 604.708.5977</p>
-                  <p className="text-gray-400">Mobile: +1 604.3418496</p>
-                  <p className="text-gray-400">Fax: +1 604.879.8050</p>
-                  <h3>Kenya</h3>
-                  <p className="text-gray-400">Phone: +254 (041) 22 55 97</p>
-                  <p className="text-gray-400">Mobile: +254 (0721) 93 52 38</p>
-                  <p className="text-gray-400">Fax: +254 (041) 22 19 34</p>
+                  <div className="md:flex md:gap-10">
+                    <div>
+                      <h3>Canada</h3>
+                      <p className="text-gray-400">Phone: +1 604.708.5977</p>
+                      <p className="text-gray-400">Mobile: +1 604.3418496</p>
+                      <p className="text-gray-400">Fax: +1 604.879.8050</p>
+                    </div>
+                    <div>
+                      <h3>Kenya</h3>
+                      <p className="text-gray-400">
+                        Phone: +254 (041) 22 55 97
+                      </p>
+                      <p className="text-gray-400">
+                        Mobile: +254 (0721) 93 52 38
+                      </p>
+                      <p className="text-gray-400">Fax: +254 (041) 22 19 34</p>
+                    </div>
+                  </div>
                 </div>
               </div>
 

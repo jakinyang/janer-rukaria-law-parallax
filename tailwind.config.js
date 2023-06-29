@@ -13,7 +13,10 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
         "testimonials": "url('/images/background-yellow-testimonials.png')",
         "testimonials2": "url('/images/wave.jpeg')",
-        "testimonials3": "url('/images/slider-testimonial-background.jpeg')"
+        "testimonials3": "url('/images/slider-testimonial-background.jpeg')",
+        "about": "url('/images/aboutbg2.svg')",
+        "about2": "url('/images/aboutbg3.svg')",
+
       },
     },
     fontFamily: {

@@ -2,7 +2,7 @@ import React from 'react'
 import TopBanner from './TopBanner'
 import About from './About'
 import { ParallaxLayer } from '@react-spring/parallax'
-import Services from './Services'
+import Services from './ImmigrationAssessment'
 import NavBar from './NavBar';
 import Resources from './Resources';
 import Testimonials from './Testimonials';

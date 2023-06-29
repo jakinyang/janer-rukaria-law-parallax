@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
 
@@ -12,18 +13,111 @@ const ResourceOne: React.FC = () => {
     <div className="flex flex-col md:flex-row md:gap-5 md:items-start bg-white">
       <img
         src="/../images/sumbnail.jpeg"
-        className="resourceImg h-36 md:h-auto md:w-[35%]"
+        className="resourceImg h-36 md:h-full md:w-[35%]"
       />
       <div className="px-3 md:w-[55%] py-5 text-gray-800">
         <h3 className="font-semibold text-xl pb-5 cursor-pointer hover:underline">
-          Resources Number One
+          <Link href="https://www.cic.gc.ca/" target="_blank">
+            Immigration Canada website
+          </Link>
         </h3>
         <p className="pb-3">
-          Im baby church-key schlitz paleo slow-carb shoreditch, pabst crucifix
-          fixie solarpunk fam...
+          Immigration Canada (CIC) is responsible for implementing all aspects
+          of Canadian immigration and citizenship.
         </p>
         <p className="font-semibold hover:underline cursor-pointer flex gap-1">
-          Learn More
+          <Link href="https://www.cic.gc.ca/" target="_blank">
+            Learn More
+          </Link>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            className="w-5 h-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+            />
+          </svg>
+        </p>
+      </div>
+    </div>
+  );
+};
+const ResourceTwo: React.FC = () => {
+  return (
+    <div className="flex flex-col md:flex-row md:gap-5 md:items-start bg-white">
+      <img
+        src="/../images/sumbnail.jpeg"
+        className="resourceImg h-36 md:h-full md:w-[35%]"
+      />
+      <div className="px-3 md:w-[55%] py-5 text-gray-800">
+        <h3 className="font-semibold text-xl pb-5 cursor-pointer hover:underline">
+          <Link href="http://www.hrsdc.gc.ca/" target="_blank">
+            Human Resources and Development Canada
+          </Link>
+        </h3>
+        <p className="pb-3">
+          The Department of Human Resources and Skills Development (HRSD) is
+          responsible for providing all Canadians with the tools they need to
+          thrive and prosper in the workplace and community.
+        </p>
+        <p className="font-semibold hover:underline cursor-pointer flex gap-1">
+          <Link href="http://www.hrsdc.gc.ca/" target="_blank">
+            Learn More
+          </Link>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            className="w-5 h-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M13.5 6H5.25A2.25 2.25 0 003 8.25v10.5A2.25 2.25 0 005.25 21h10.5A2.25 2.25 0 0018 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25"
+            />
+          </svg>
+        </p>
+      </div>
+    </div>
+  );
+};
+const ResourceThree: React.FC = () => {
+  return (
+    <div className="flex flex-col md:flex-row md:gap-5 md:items-start bg-white">
+      <img
+        src="/../images/sumbnail.jpeg"
+        className="resourceImg h-36 md:h-full md:w-[35%]"
+      />
+      <div className="px-3 md:w-[55%] py-5 text-gray-800">
+        <h3 className="font-semibold text-xl pb-5 cursor-pointer hover:underline">
+          <Link
+            href="http://www.aved.gov.bc.ca/provincialnominee/welcome.htm"
+            target="_blank"
+          >
+            British Columbia Immigration Program
+          </Link>
+        </h3>
+        <p className="pb-3">
+          The British Columbia Provincial Nominee Program (BC PNP) offers
+          accelerated immigration for qualified skilled workers and experienced
+          entrepreneurs who wish to settle in British Columbia (BC) and become
+          permanent residents of Canada.
+        </p>
+        <p className="font-semibold hover:underline cursor-pointer flex gap-1">
+          <Link
+            href="http://www.aved.gov.bc.ca/provincialnominee/welcome.htm"
+            target="_blank"
+          >
+            Learn More
+          </Link>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
@@ -46,8 +140,10 @@ const ResourceOne: React.FC = () => {
 
 const Resources: React.FC = () => {
   return (
-    <div className="flex flex-col w-full pt-20 md:pt-80 px-10 lg:px-40 items-center">
-      <h2 className="font-serif font-semibold text-3xl md:text-5xl pb-10">Resources</h2>
+    <div className="flex flex-col w-full pt-20 md:pt-80 px-10 lg:px-28 items-center">
+      <h2 className="font-serif font-semibold text-3xl md:text-5xl pb-10">
+        Useful Links
+      </h2>
       <div className="w-full md:hidden">
         <Swiper
           // install Swiper modules
@@ -65,16 +161,10 @@ const Resources: React.FC = () => {
             <ResourceOne />
           </SwiperSlide>
           <SwiperSlide>
-            <ResourceOne />
+            <ResourceTwo />
           </SwiperSlide>
           <SwiperSlide>
-            <ResourceOne />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ResourceOne />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ResourceOne />
+            <ResourceThree />
           </SwiperSlide>
           <SwiperSlide>
             <ResourceOne />
@@ -83,10 +173,8 @@ const Resources: React.FC = () => {
       </div>
       <div className="hidden md:grid grid-cols-1 lg:grid-cols-2 gap-5">
         <ResourceOne />
-        <ResourceOne />
-        <ResourceOne />
-        <ResourceOne />
-        <ResourceOne />
+        <ResourceTwo />
+        <ResourceThree />
         <ResourceOne />
       </div>
       <div className="hidden md:flex flex-col items-center mt-10">
