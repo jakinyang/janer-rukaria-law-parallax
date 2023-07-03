@@ -37,7 +37,7 @@ const About: React.FC = () => {
         </div>
         <div className="hidden lg:block lg:bg-about2 lg:bg-no-repeat lg:bg-contain">
           <Image
-            src={"/images/Jane-nobg.png"}
+            src={"/images/jane-profile-2.png"}
             alt="Jane Rukaria profile picture"
             width={400}
             height={400}

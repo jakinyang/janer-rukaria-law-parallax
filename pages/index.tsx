@@ -7,7 +7,7 @@ const App: React.FC = () => {
   return (
     <div className="w-full h-full">
       <Parallax
-        pages={6}
+        pages={8}
         innerStyle={{
           position: 'absolute',
           width: '100%',

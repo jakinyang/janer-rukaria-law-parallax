@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 
-const Services: React.FC = () => {
+const ImmigrationAssessment: React.FC = () => {
   return (
     <div className="flex flex-col w-full pt-10 md:pt-80 px-5 md:px-10 items-center">
       <h2 className="font-serif font-semibold text-3xl md:text-5xl">
@@ -200,4 +200,4 @@ const Services: React.FC = () => {
   );
 };
 
-export default Services;
+export default ImmigrationAssessment;
