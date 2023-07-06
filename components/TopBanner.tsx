@@ -5,7 +5,7 @@ import SectionWrapper from "./SectionWrapper";
 const TopBanner: React.FC = () => {
   return (
     <SectionWrapper id="topBanner">
-      <div className="relative top-32 flex w-full justify-around items-start">
+      <div className="relative top-20 flex w-full justify-around items-start">
         <div className="hidden md:block">
           <Image
             src={"/images/jane-profile-1.png"}

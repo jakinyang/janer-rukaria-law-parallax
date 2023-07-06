@@ -5,19 +5,20 @@ import SectionWrapper from "./SectionWrapper";
 const About: React.FC = () => {
   return (
     <SectionWrapper id="about">
-      <div className="flex w-full pt-80 justify-center items-center">
+      <div className="flex w-full pt-60 justify-center items-center">
         <div className="flex-col bg-about bg-no-repeat bg-contain p-36">
-          <h2 className="brutalist-title text-3xl md:text-4xl max-w-lg mb-8 font-serif font-semibold text-gray-800">
+          <h2 className="brutalist-title text-3xl md:text-4xl max-w-lg mb-8 font-serif font-semibold text-gray-800 pl-10">
             <a className="text-gray-800">About</a> Jane Rukaria Law
           </h2>
           <div className="">
-            <p className="brutalist-title text-xl max-w-2xl text-gray-800">
+            <p className="brutalist-title text-xl max-w-2xl text-gray-800 pl-10">
               Jane was born and raised in Kenya. She studied law at the
               University of Nairobi and the Kenya School of Law and was called
               to the Bar of Kenya in 1992. After completion of her studies in
               Kenya, Jane gained valuable experience in civil litigation and has
               successfully argued cases in several areas of law up to the
               highest court in Kenya.
+              <br />
               {/* Apart from her legal work, Jane is also involved in community work
             through providing pro-bono legal services and facilitating
             micro-economic self-help projects in several villages in Kenya. */}
@@ -31,9 +32,11 @@ const About: React.FC = () => {
               good use in serving her clients and community.
             </p>
           </div>
-          <button className="mt-5 text-gray-800 bg-transparent hover:bg-white font-semibold hover:text-gray-800 py-2 px-4 border border-gray-800 hover:border-transparent rounded">
-            Contact Jane Rukaria Law
-          </button>
+          <div className="pl-10">
+            <button className="mt-5 text-gray-800 bg-transparent hover:bg-white font-semibold hover:text-gray-800 py-2 px-4 border border-gray-800 hover:border-transparent rounded">
+              Contact Jane Rukaria Law
+            </button>
+          </div>
         </div>
         <div className="hidden lg:block lg:bg-about2 lg:bg-no-repeat lg:bg-contain">
           <Image
