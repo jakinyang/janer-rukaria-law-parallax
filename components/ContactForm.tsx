@@ -60,7 +60,7 @@ const ContactForm: React.FC = () => {
         // <button type="submit">Send Message</button>
         //{" "}
       </form> */}
-      <div className="mt-60 md:mt-0 flex justify-center items-center w-screen h-screen ">
+      <div className="mt-[500px] md:mt-0 flex justify-center items-center w-screen h-screen ">
         <div className="container mx-auto my-4 px-4">
           <div className="w-full p-8 my-4 lg:w-8/12 lg:pr-40 mr-auto rounded-2xl">
             <div className="flex">
@@ -112,7 +112,7 @@ const ContactForm: React.FC = () => {
                 Drop in our office
               </h1>
 
-              <div className="flex my-4 w-2/3 lg:w-full">
+              <div className="flex my-4 md:w-2/3 lg:w-full">
                 <div className="flex flex-col">
                   <i className="fas fa-map-marker-alt pt-2 pr-2" />
                 </div>
@@ -124,7 +124,7 @@ const ContactForm: React.FC = () => {
                   </p>
                 </div>
               </div>
-              <div className="flex my-4 w-2/3 lg:w-full">
+              <div className="flex my-4 md:w-2/3 lg:w-full">
                 <div className="flex flex-col">
                   <i className="fas fa-map-marker-alt pt-2 pr-2" />
                 </div>
@@ -137,7 +137,7 @@ const ContactForm: React.FC = () => {
                 </div>
               </div>
 
-              <div className="flex my-4 w-2/3 lg:w-full">
+              <div className="flex my-4 md:w-2/3 lg:w-full">
                 <div className="flex flex-col">
                   <i className="fas fa-phone-alt pt-2 pr-2" />
                 </div>

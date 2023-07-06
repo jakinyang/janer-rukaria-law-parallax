@@ -5,7 +5,7 @@ import SectionWrapper from "./SectionWrapper";
 const Paragraph: React.FC = () => {
   return (
     <SectionWrapper id="about">
-      <div className="flex gap-20 w-full pt-80 justify-center items-center">
+      <div className="flex gap-20 w-full pt-20 md:pt-80 justify-center items-center">
         <div className="hidden lg:block">
           <Image
             src={"/images/jane41024_1.jpg"}
@@ -20,7 +20,7 @@ const Paragraph: React.FC = () => {
             Why would I need a lawyer to handle my immigration matter?
           </h2>
           <div className="">
-            <p className="brutalist-title text-xl max-w-2xl">
+            <p className="brutalist-title md:text-xl max-w-2xl">
               Maybe you’ve asked yourself this question because you know the
               Citizenship and Immigration Canada website has all the application
               forms, kits, manuals and guides that you may need. Or maybe you

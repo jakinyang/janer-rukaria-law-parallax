@@ -10,10 +10,10 @@ import "swiper/css/scrollbar";
 
 const ResourceOne: React.FC = () => {
   return (
-    <div className="flex flex-col md:flex-row md:gap-5 md:items-start bg-white rounded-xl">
+    <div className="h-[550px] md:h-auto flex flex-col md:flex-row md:gap-5 md:items-start bg-white rounded-xl">
       <img
         src="/../images/canadaimmigration.jpeg"
-        className="resourceImg h-36 md:h-auto md:w-[35%] rounded-xl p-5"
+        className="resourceImg h-auto md:h-auto md:w-[35%] rounded-xl p-5"
       />
       <div className="px-3 md:w-[55%] py-5 text-gray-800">
         <h3 className="font-semibold text-xl pb-5 cursor-pointer hover:underline">
@@ -50,10 +50,10 @@ const ResourceOne: React.FC = () => {
 };
 const ResourceTwo: React.FC = () => {
   return (
-    <div className="flex flex-col md:flex-row md:gap-5 md:items-start bg-white rounded-xl">
+    <div className="h-[550px] md:h-auto flex flex-col md:flex-row md:gap-5 md:items-start bg-white rounded-xl">
       <img
         src="/../images/hrdc.jpeg"
-        className="resourceImg h-36 md:h-full md:w-[35%] rounded-tl-xl rounded-bl-xl"
+        className="resourceImg h-auto md:h-full md:w-[35%] rounded-tr-xl md:rounded-tr-none rounded-tl-xl rounded-bl-xl"
       />
       <div className="px-3 md:w-[55%] py-5 text-gray-800">
         <h3 className="font-semibold text-xl pb-5 cursor-pointer hover:underline">
@@ -91,10 +91,10 @@ const ResourceTwo: React.FC = () => {
 };
 const ResourceThree: React.FC = () => {
   return (
-    <div className="flex flex-col md:flex-row md:gap-5 md:items-start bg-white rounded-xl">
+    <div className="h-[550px] md:h-auto flex flex-col md:flex-row md:gap-5 md:items-start bg-white rounded-xl">
       <img
         src="/../images/bcpnp.jpeg"
-        className="resourceImg h-36 md:h-auto md:w-[35%] pl-5 rounded-xl"
+        className="self-center resourceImg w-[70%] md:h-auto md:w-[35%] md:pl-5 rounded-xl"
       />
       <div className="px-3 md:w-[55%] py-5 text-gray-800">
         <h3 className="font-semibold text-xl pb-5 cursor-pointer hover:underline">

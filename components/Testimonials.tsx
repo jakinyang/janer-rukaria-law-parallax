@@ -67,7 +67,7 @@ const Ratings: React.FC = (numOfStar) => {
 
 const Testimonials: React.FC = () => {
   return (
-    <div className="py-10 md:pt-80 md:pb-48 flex justify-center">
+    <div className="pt-32 md:pt-80 md:pb-48 flex justify-center">
       <div className="w-[90%] lg:w-[60%]">
         <Swiper
           // install Swiper modules

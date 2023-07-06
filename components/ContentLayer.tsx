@@ -18,8 +18,8 @@ export function ContentLayer() {
       speed={0.5}
       style={{ zIndex: 1 }}
     >
-      <NavBar />
       <TopBanner />
+      <NavBar />
       <About />
       <Services />
       <ImmigrationAssessment />

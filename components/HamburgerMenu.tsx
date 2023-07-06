@@ -23,11 +23,13 @@ const HamburgerMenu: React.FC = () => {
   }
   const navItems = [
     // { label: 'Top Banner', id: 'topBanner' },
-    { label: 'About', id: 'about' },
-    { label: 'Services', id: 'services' },
-    { label: 'Resources', id: 'resources' },
-    { label: 'Testimonials', id: 'testimonials' },
-    { label: 'Contact', id: 'contactForm' },
+    { label: "About", id: "about" },
+    { label: "Services", id: "services" },
+    { label: "Immigration Assessment", id: "assessment" },
+    { label: "Why need a lawyer", id: "why" },
+    { label: "Resources", id: "resources" },
+    { label: "Testimonials", id: "testimonials" },
+    { label: "Contact", id: "contactForm" },
   ];
 
 

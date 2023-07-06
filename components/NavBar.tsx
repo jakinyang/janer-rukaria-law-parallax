@@ -9,6 +9,8 @@ const NavBar: React.FC = () => {
     // { label: 'Top Banner', id: 'topBanner' },
     { label: "About", id: "about" },
     { label: "Services", id: "services" },
+    { label: "Immigration Assessment", id: "assessment" },
+    { label: "Why need a lawyer", id: "why" },
     { label: "Resources", id: "resources" },
     { label: "Testimonials", id: "testimonials" },
     { label: "Contact", id: "contactForm" },
@@ -24,10 +26,10 @@ const NavBar: React.FC = () => {
             height={150}
             alt="logo"
           />
-          <div className="md:hidden z-100">
+          <div className="lg:hidden z-100">
             <HamburgerMenu />
           </div>
-          <ul className="hidden md:flex justify-end space-x-4">
+          <ul className="hidden lg:flex justify-end space-x-4">
             {navItems.map((item) => (
               <li key={item.id}>
                 <Link
@@ -38,7 +40,7 @@ const NavBar: React.FC = () => {
                   duration={500}
                   className="font-serif text-xl p-2 cursor-pointer"
                 >
-                  <p className="neobrutalist-nav lg:px-7 font-sans">
+                  <p className="neobrutalist-nav lg:px-2 font-sans">
                     {item.label}
                   </p>
                 </Link>
