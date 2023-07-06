@@ -18,14 +18,13 @@ const ImmigrationAssessment: React.FC = () => {
           Citizenship and Immigration Canada (CIC) website{" "}
         </Link>{" "}
         explains each category in detail. We suggest that you visit the CIC site
-        and understand which category may apply to you. You should also read
-        Frequently Asked Questions on our web site.
+        and understand which category may apply to you.
       </h3>
       <div className="grid grid-cols-1 lg:grid-cols-4 place-content-center items-center justify-center mt-10 gap-5 md:p-10 2xl:text-xl">
         <div className="h-[450px] bg-white bg-opacity-90 hover:bg-opacity-100 shadow-xl rounded-xl flex flex-col items-center p-5 text-center">
           <div>
             <img
-              src="/../images/icons8-passion-64.png"
+              src="/../images/pencil.png"
               alt=""
               className="w-14"
             />
@@ -49,7 +48,7 @@ const ImmigrationAssessment: React.FC = () => {
         </div>
         <div className="h-[450px] bg-white bg-opacity-90 hover:bg-opacity-100 shadow-xl rounded-xl flex flex-col items-center p-5 text-center">
           <div>
-            <img src="/../images/collaboration.png" alt="" className="w-14" />
+            <img src="/../images/experience.png" alt="" className="w-14" />
           </div>
           <div className="mt-3 mb-5 font-bookmania2 text-xl text-gray-800 font-semibold">
             <p>Canadian Experience Class</p>
@@ -96,7 +95,7 @@ const ImmigrationAssessment: React.FC = () => {
         </div>
         <div className="h-[450px] bg-white bg-opacity-90 hover:bg-opacity-100 shadow-xl rounded-xl flex flex-col items-center p-5 text-center">
           <div>
-            <img src="/../images/curious.png" alt="" className="w-14" />
+            <img src="/../images/briefcase.png" alt="" className="w-14" />
           </div>
           <div className="mt-3 mb-5 font-bookmania2 text-xl text-gray-800 font-semibold">
             <p>Business Immigration</p>
@@ -120,7 +119,7 @@ const ImmigrationAssessment: React.FC = () => {
         <div className="h-[450px] bg-white bg-opacity-90 hover:bg-opacity-100 shadow-xl rounded-xl flex flex-col items-center p-5 text-center">
           <div>
             <img
-              src="/../images/icons8-passion-64.png"
+              src="/../images/family.png"
               alt=""
               className="w-14"
             />
@@ -168,7 +167,7 @@ const ImmigrationAssessment: React.FC = () => {
         </div>
         <div className="h-[450px] place-self-center bg-white bg-opacity-90 hover:bg-opacity-100 shadow-xl rounded-xl flex flex-col items-center p-5 text-center">
           <div>
-            <img src="/../images/collaboration.png" alt="" className="w-14" />
+            <img src="/../images/icons8-passion-64.png" alt="" className="w-14" />
           </div>
           <div className="mt-3 mb-5 font-bookmania2 text-xl text-gray-800 font-semibold">
             <p>Humanitarian and Compassionate cases</p>
