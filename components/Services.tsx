@@ -19,8 +19,9 @@ const Services: React.FC = () => {
         <div className="w-[70%] grid grid-cols-1 lg:grid-cols-2 items-center justify-center mt-10 gap-10 2xl:text-xl">
           <div className="">
             <hr />
-            <div className="mt-3 mb-5 font-bookmania2 text-xl  font-semibold">
-              <p>Immigration</p>
+            <div className="flex gap-1 mt-3 mb-5 font-bookmania2 text-xl  font-semibold">
+            <img src="/../images/diamond.png" alt="" className="w-auto h-6" />
+            <p>Immigration</p>
             </div>
             <div className=" font-novatest">
               Temporary Visas (student, visitor) / Work permits / Skilled worker
@@ -30,7 +31,8 @@ const Services: React.FC = () => {
           </div>
           <div className="">
             <hr />
-            <div className="mt-3 mb-5 font-bookmania2 text-xl  font-semibold">
+            <div className="flex gap-1 mt-3 mb-5 font-bookmania2 text-xl  font-semibold">
+              <img src="/../images/diamond.png" alt="" className="w-auto h-6" />
               <p>Real Estate</p>
             </div>
             <div className=" font-novatest">
@@ -41,7 +43,8 @@ const Services: React.FC = () => {
           </div>
           <div className="">
             <hr />
-            <div className="mt-3 mb-5 font-bookmania2 text-xl  font-semibold">
+            <div className="flex gap-1 mt-3 mb-5 font-bookmania2 text-xl  font-semibold">
+              <img src="/../images/diamond.png" alt="" className="w-auto h-6" />
               <p>Uncontested Divorce</p>
             </div>
             <div className=" font-novatest">
@@ -52,7 +55,8 @@ const Services: React.FC = () => {
           </div>
           <div className="">
             <hr />
-            <div className="mt-3 mb-5 font-bookmania2 text-xl  font-semibold">
+            <div className="flex gap-1 mt-3 mb-5 font-bookmania2 text-xl  font-semibold">
+              <img src="/../images/diamond.png" alt="" className="w-auto h-6" />
               <p>Wills and Estates</p>
             </div>
             <div className=" font-novatest">
@@ -63,7 +67,8 @@ const Services: React.FC = () => {
           </div>
           <div className="">
             <hr />
-            <div className="mt-3 mb-5 font-bookmania2 text-xl  font-semibold">
+            <div className="flex gap-1 mt-3 mb-5 font-bookmania2 text-xl  font-semibold">
+              <img src="/../images/diamond.png" alt="" className="w-auto h-6" />
               <p>Personal Injury</p>
             </div>
             <div className="pb-10 font-novatest">
@@ -75,7 +80,8 @@ const Services: React.FC = () => {
           </div>
           <div className="">
             <hr />
-            <div className="mt-3 mb-5 font-bookmania2 text-xl font-semibold">
+            <div className="flex gap-1 mt-3 mb-5 font-bookmania2 text-xl font-semibold">
+            <img src="/../images/diamond.png" alt="" className="w-auto h-6" />
               <p>Company Law</p>
             </div>
             <div className="pb-10 font-novatest">
