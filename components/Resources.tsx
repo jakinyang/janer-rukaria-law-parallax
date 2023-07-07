@@ -140,7 +140,7 @@ const ResourceThree: React.FC = () => {
 
 const Resources: React.FC = () => {
   return (
-    <div className="flex flex-col w-full pt-20 md:pt-80 px-10 lg:px-28 items-center">
+    <div className="flex flex-col w-full pt-20 md:pt-60 px-10 lg:px-28 items-center">
       <h2 className="font-serif font-semibold text-3xl md:text-5xl pb-10">
         Useful Links
       </h2>

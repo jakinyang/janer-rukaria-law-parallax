@@ -53,7 +53,7 @@ return (
                 duration={500}
                 className="font-serif text-xl p-2 cursor-pointer text-gray-800"
               >
-                <p className='neobrutalist-nav lg:px-7 font-sans'>
+                <p className='neobrutalist-nav lg:px-7 font-serif'>
                   {item.label}
                 </p>
               </Link>

@@ -25,6 +25,14 @@ const NavBar: React.FC = () => {
             width={150}
             height={150}
             alt="logo"
+            className="w-[30%] h-[30%] pt-1 md:hidden"
+          />
+          <Image
+            src="/../public/images/logo-nav.png"
+            width={150}
+            height={150}
+            alt="logo"
+            className="hidden md:block"
           />
           <div className="lg:hidden z-100">
             <HamburgerMenu />
