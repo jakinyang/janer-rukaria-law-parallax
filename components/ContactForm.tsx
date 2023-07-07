@@ -1,15 +1,19 @@
 import React, { useState } from "react";
 
 interface FormData {
-  name: string;
+  firstName: string;
+  lastName: string;
   email: string;
+  phone: string;
   message: string;
 }
 
 const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState<FormData>({
-    name: "",
+    firstName: "",
+    lastName: "",
     email: "",
+    phone: "",
     message: "",
   });
 
@@ -68,42 +72,65 @@ const ContactForm: React.FC = () => {
                 Send us a message
               </h1>
             </div>
-            <div className="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
-              <input
-                className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                type="text"
-                placeholder="First Name*"
-              />
-              <input
-                className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                type="text"
-                placeholder="Last Name*"
-              />
-              <input
-                className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                type="email"
-                placeholder="Email*"
-              />
-              <input
-                className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-                type="number"
-                placeholder="Phone*"
-              />
-            </div>
-            <div className="my-4">
-              <textarea
-                placeholder="Message*"
-                className="w-full h-48 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
-              ></textarea>
-            </div>
-            <div className="my-2 w-1/2 lg:w-1/4">
-              <button
-                className="uppercase text-sm font-bold tracking-wide bg-blue-900 text-gray-100 p-3 rounded-lg w-full 
+            <form onSubmit={handleSubmit}>
+              <div className="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
+                <input
+                  className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                  type="text"
+                  placeholder="First Name*"
+                  id="firstName"
+                  name="firstName"
+                  value={formData.firstName}
+                  onChange={handleChange}
+                />
+                <input
+                  className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                  type="text"
+                  placeholder="Last Name*"
+                  id="lastName"
+                  name="lastName"
+                  value={formData.lastName}
+                  onChange={handleChange}
+                />
+                <input
+                  className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                  type="email"
+                  placeholder="Email*"
+                  id="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                />
+                <input
+                  className="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                  type="number"
+                  placeholder="Phone*"
+                  id="phone"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                />
+              </div>
+              <div className="my-4">
+                <textarea
+                  placeholder="Message*"
+                  onChange={handleChange}
+                  id="message"
+                  name="message"
+                  value={formData.message}
+                  className="w-full h-48 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                ></textarea>
+              </div>
+              <div className="my-2 w-1/2 lg:w-1/4">
+                <button
+                  type="submit"
+                  className="uppercase text-sm font-bold tracking-wide bg-blue-900 text-gray-100 p-3 rounded-lg w-full 
                       focus:outline-none focus:shadow-outline"
-              >
-                Send Message
-              </button>
-            </div>
+                >
+                  Send Message
+                </button>
+              </div>
+            </form>
           </div>
 
           <div className="w-full lg:-mt-[29rem] lg:w-5/12 px-8 py-12 ml-auto bg-blue-900 rounded-2xl">
