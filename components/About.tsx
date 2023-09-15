@@ -6,7 +6,7 @@ const About: React.FC = () => {
   return (
     <SectionWrapper id="about">
       <div className="flex w-full md:pt-60 justify-center items-center">
-        <div className="flex-col md:bg-about md:bg-no-repeat md:bg-contain md:p-36">
+        <div className="flex-col">
           <div className="flex justify-center md:hidden">
             <Image
               src={"/images/jane-profile-1.svg"}
@@ -16,11 +16,11 @@ const About: React.FC = () => {
               className="pb-10"
             />
           </div>
-          <h2 className="brutalist-title text-3xl md:text-4xl max-w-lg mb-4 lg:mb-8 font-serif font-semibold md:text-gray-800 lg:pl-10">
+          <h2 className="brutalist-title text-3xl md:text-4xl max-w-lg mb-4 lg:mb-8 font-serif font-semibold lg:pl-10">
             <a className="md:text-gray-800">About</a> Jane Rukaria Law
           </h2>
           <div className="">
-            <p className="brutalist-title lg:text-xl max-w-2xl md:text-gray-800 lg:pl-10">
+            <p className="brutalist-title lg:text-xl max-w-2xl lg:pl-10">
               Jane was born and raised in Kenya. She studied law at the
               University of Nairobi and the Kenya School of Law and was called
               to the Bar of Kenya in 1992. After completion of her studies in
@@ -43,12 +43,12 @@ const About: React.FC = () => {
             </p>
           </div>
           <div className="lg:pl-10">
-            <button className="mt-5 md:text-gray-800 bg-transparent hover:bg-white font-semibold md:hover:text-gray-800 py-2 px-4 border md:border-gray-800 hover:border-transparent rounded">
+            <button className="mt-5 bg-transparent hover:bg-white font-semibold md:hover:text-gray-800 py-2 px-4 border hover:border-transparent rounded">
               Contact Jane Rukaria Law
             </button>
           </div>
         </div>
-        <div className="hidden lg:block lg:bg-about2 lg:bg-no-repeat lg:bg-contain">
+        <div className="hidden lg:block">
           <Image
             src={"/images/jane-profile-2.png"}
             alt="Jane Rukaria profile picture"
