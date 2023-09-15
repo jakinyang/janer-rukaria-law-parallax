@@ -1,9 +1,29 @@
 import React from "react";
+import { services } from "../data/services";
+
+interface ServiceData {
+  name: string;
+  description: string;
+}
 
 const Services: React.FC = () => {
+  const servicesList = services.map((service: ServiceData, i) => {
+    return (
+      <div className="" key={i}>
+        <hr />
+        <div className="flex items-center gap-2 mt-5 mb-5 font-bookmania2 text-xl  font-semibold">
+          <img src="/../images/diamond.png" alt="" className="w-auto h-6" />
+          <p>{service.name}</p>
+        </div>
+        <div className=" font-novatest">{service.description}</div>
+
+      </div>
+    );
+  });
+
   return (
     <div className="flex flex-col w-full pt-10 md:pt-60 px-5 md:px-20 items-center">
-      <div className="flex flex-col lg:flex-row lg:gap-10">
+      <div className="flex flex-col gap-10 lg:flex-row lg:gap-10">
         <div className="lg:w-[30%]">
           <h2 className="font-serif font-semibold text-3xl md:text-5xl">
             Our Services
@@ -16,58 +36,11 @@ const Services: React.FC = () => {
             although we also offer our clients services in other areas of law.
           </p>
         </div>
-        <div className="lg:w-[70%] grid grid-cols-1 lg:grid-cols-2 items-center justify-center mt-10 gap-10 2xl:text-xl">
+        <div className="lg:w-[70%] grid grid-cols-1 lg:grid-cols-2 items-start justify-center gap-10 2xl:text-xl">
+          {servicesList}
           <div className="">
             <hr />
-            <div className="flex gap-1 mt-3 mb-5 font-bookmania2 text-xl  font-semibold">
-            <img src="/../images/diamond.png" alt="" className="w-auto h-6" />
-            <p>Immigration</p>
-            </div>
-            <div className=" font-novatest">
-              Temporary Visas (student, visitor) / Work permits / Skilled worker
-              / Investor / Entrepreneur / Family sponsorship / International
-              adoption / Provincial nominee
-            </div>
-          </div>
-          <div className="">
-            <hr />
-            <div className="flex gap-1 mt-3 mb-5 font-bookmania2 text-xl  font-semibold">
-              <img src="/../images/diamond.png" alt="" className="w-auto h-6" />
-              <p>Real Estate</p>
-            </div>
-            <div className=" font-novatest">
-              Im baby church-key schlitz paleo slow-carb shoreditch, pabst
-              crucifix fixie solarpunk fam. Im baby church-key schlitz paleo
-              slow-carb shoreditch, pabst crucifix fixie solarpunk fam.
-            </div>
-          </div>
-          <div className="">
-            <hr />
-            <div className="flex gap-1 mt-3 mb-5 font-bookmania2 text-xl  font-semibold">
-              <img src="/../images/diamond.png" alt="" className="w-auto h-6" />
-              <p>Uncontested Divorce</p>
-            </div>
-            <div className=" font-novatest">
-              Im baby church-key schlitz paleo slow-carb shoreditch, pabst
-              crucifix fixie solarpunk fam. Im baby church-key schlitz paleo
-              slow-carb shoreditch, pabst crucifix fixie solarpunk fam.
-            </div>
-          </div>
-          <div className="">
-            <hr />
-            <div className="flex gap-1 mt-3 mb-5 font-bookmania2 text-xl  font-semibold">
-              <img src="/../images/diamond.png" alt="" className="w-auto h-6" />
-              <p>Wills and Estates</p>
-            </div>
-            <div className=" font-novatest">
-              Im baby church-key schlitz paleo slow-carb shoreditch, pabst
-              crucifix fixie solarpunk fam. Im baby church-key schlitz paleo
-              slow-carb shoreditch, pabst crucifix fixie solarpunk fam.
-            </div>
-          </div>
-          <div className="">
-            <hr />
-            <div className="flex gap-1 mt-3 mb-5 font-bookmania2 text-xl  font-semibold">
+            <div className="flex items-center gap-2 mt-5 mb-5 font-bookmania2 text-xl  font-semibold">
               <img src="/../images/diamond.png" alt="" className="w-auto h-6" />
               <p>Personal Injury</p>
             </div>
@@ -76,12 +49,12 @@ const Services: React.FC = () => {
               crucifix fixie solarpunk fam. Im baby church-key schlitz paleo
               slow-carb shoreditch, pabst crucifix fixie solarpunk fam.
             </div>
-            <hr className="hidden lg:block"/>
+            <hr className="hidden lg:block" />
           </div>
           <div className="">
             <hr />
-            <div className="flex gap-1 mt-3 mb-5 font-bookmania2 text-xl font-semibold">
-            <img src="/../images/diamond.png" alt="" className="w-auto h-6" />
+            <div className="flex items-center gap-2 mt-5 mb-5 font-bookmania2 text-xl font-semibold">
+              <img src="/../images/diamond.png" alt="" className="w-auto h-6" />
               <p>Company Law</p>
             </div>
             <div className="pb-10 font-novatest">
@@ -89,7 +62,7 @@ const Services: React.FC = () => {
               crucifix fixie solarpunk fam. Im baby church-key schlitz paleo
               slow-carb shoreditch, pabst crucifix fixie solarpunk fam.
             </div>
-            <hr/>
+            <hr />
           </div>
         </div>
       </div>

@@ -28,6 +28,7 @@ const About: React.FC = () => {
               successfully argued cases in several areas of law up to the
               highest court in Kenya.
               <br />
+              <br />
               {/* Apart from her legal work, Jane is also involved in community work
             through providing pro-bono legal services and facilitating
             micro-economic self-help projects in several villages in Kenya. */}
