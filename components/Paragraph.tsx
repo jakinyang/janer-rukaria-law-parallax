@@ -24,20 +24,26 @@ const Paragraph: React.FC = () => {
               Maybe you’ve asked yourself this question because you know the
               Citizenship and Immigration Canada website has all the application
               forms, kits, manuals and guides that you may need. Or maybe you
-              know of someone who did it themselves. Consider the fact that
+              know of someone who did it themselves.
+              Consider the fact that
               immigration is something that is truly life-changing; the stakes
               are high and the consequences of failure are far-reaching and
-              costly. You and your family’s future are at stake. You need a
+              costly. You and your family’s future are at stake.
+              <br />
+              <br />
+              You need a
               dedicated lawyer, not the friend down the road who may know little
               more than what the website provides. Unless you work with a law
               firm that understands Canadian immigration law, you are unlikely
               to find the expertise to recognize and deal with the complex
               situations or problems that arise.
               <br />
+              <br />
               You need a lawyer who knows the most up-to-date immigration law
               and procedures. One who will give you candid advice, who can
               relate to the complex issues raised by culture, language, gender
               and race and who is sensitive to them.
+              <br />
               <br />
               One you can trust your family’s future with.
             </p>

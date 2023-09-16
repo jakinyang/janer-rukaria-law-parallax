@@ -7,6 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import SectionWrapper from "./SectionWrapper";
 
 const ItemOne: React.FC = () => {
   return (
@@ -196,78 +197,80 @@ const ItemSeven: React.FC = () => {
 
 const ImmigrationAssessment: React.FC = () => {
   return (
-    <div className="flex flex-col w-full pt-20 md:pt-80 px-5 md:px-10 items-center">
-      <h2 className="font-serif font-semibold text-3xl md:text-5xl">
-        Immigration Assessment
-      </h2>
-      <h3 className="max-w-3xl text-center py-5 md:pt-10 md:pb-0">
-        There are several main ways to &quot;immigrate&quot; to Canada.
-        <Link
-          href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry.html"
-          target="_blank"
-          className="hover:underline"
-        >
-          {" "}
-          Citizenship and Immigration Canada (CIC) website{" "}
-        </Link>{" "}
-        explains each category in detail. We suggest that you visit the CIC site
-        and understand which category may apply to you.
-      </h3>
-      <div className="w-full md:hidden">
-        <Swiper
-          // install Swiper modules
-          modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-          spaceBetween={50}
-          slidesPerView={1}
-          navigation
-          rewind={true}
-          pagination={{ clickable: true }}
-          scrollbar={{ draggable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log("slide change")}
-        >
-          <SwiperSlide>
-            <ItemOne />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ItemTwo />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ItemThree />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ItemFour />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ItemFive />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ItemSix />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ItemSeven />
-          </SwiperSlide>
-        </Swiper>
-      </div>
-      <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-content-center items-center justify-center mt-10 gap-5 md:p-10 2xl:text-xl">
-        <ItemOne />
-        <ItemTwo />
-        <ItemThree />
-        <ItemFour />
-        <ItemFive />
-        <ItemSix />
-        <ItemSeven />
-        <div className="flex flex-col items-center mt-10">
-          <p className="text-center">
-            Would like to know <br />
-            more about our services?
-          </p>
-          <button className="mt-5 bg-transparent hover:bg-white text-white font-semibold hover:text-gray-800 py-2 px-4 border border-white hover:border-transparent rounded">
-            Contact Jane Rukaria Law
-          </button>
+    <SectionWrapper>
+      <div className="flex flex-col w-full pt-20 md:pt-80 items-center">
+        <h2 className="font-serif font-semibold text-3xl text-center md:text-5xl">
+          Immigration Assessment
+        </h2>
+        <h3 className="max-w-3xl text-center py-5 md:pt-10 md:pb-0">
+          There are several main ways to &quot;immigrate&quot; to Canada.
+          <Link
+            href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry.html"
+            target="_blank"
+            className="hover:underline"
+          >
+            {" "}
+            Citizenship and Immigration Canada (CIC) website{" "}
+          </Link>{" "}
+          explains each category in detail. We suggest that you visit the CIC
+          site and understand which category may apply to you.
+        </h3>
+        <div className="w-full md:hidden">
+          <Swiper
+            // install Swiper modules
+            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+            spaceBetween={50}
+            slidesPerView={1}
+            navigation
+            rewind={true}
+            pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
+            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => console.log("slide change")}
+          >
+            <SwiperSlide>
+              <ItemOne />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ItemTwo />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ItemThree />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ItemFour />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ItemFive />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ItemSix />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ItemSeven />
+            </SwiperSlide>
+          </Swiper>
+        </div>
+        <div className="hidden md:grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 place-content-center items-center justify-center mt-10 gap-5 md:p-10 2xl:text-xl">
+          <ItemOne />
+          <ItemTwo />
+          <ItemThree />
+          <ItemFour />
+          <ItemFive />
+          <ItemSix />
+          <ItemSeven />
+          <div className="flex flex-col items-center mt-10">
+            <p className="text-center">
+              Would like to know <br />
+              more about our services?
+            </p>
+            <button className="mt-5 bg-transparent hover:bg-white text-white font-semibold hover:text-gray-800 py-2 px-4 border border-white hover:border-transparent rounded">
+              Contact Jane Rukaria Law
+            </button>
+          </div>
         </div>
       </div>
-    </div>
+    </SectionWrapper>
   );
 };
 

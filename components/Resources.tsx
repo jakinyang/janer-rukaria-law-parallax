@@ -7,6 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import SectionWrapper from "./SectionWrapper";
 
 const ResourceOne: React.FC = () => {
   return (
@@ -140,50 +141,52 @@ const ResourceThree: React.FC = () => {
 
 const Resources: React.FC = () => {
   return (
-    <div className="flex flex-col w-full pt-20 md:pt-60 px-10 lg:px-28 items-center">
-      <h2 className="font-serif font-semibold text-3xl md:text-5xl pb-10">
-        Useful Links
-      </h2>
-      <div className="w-full md:hidden">
-        <Swiper
-          // install Swiper modules
-          modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-          spaceBetween={50}
-          slidesPerView={1}
-          navigation
-          rewind={true}
-          pagination={{ clickable: true }}
-          scrollbar={{ draggable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log("slide change")}
-        >
-          <SwiperSlide>
-            <ResourceOne />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ResourceTwo />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ResourceThree />
-          </SwiperSlide>
-          <SwiperSlide>
-            <ResourceOne />
-          </SwiperSlide>
-        </Swiper>
+    <SectionWrapper>
+      <div className="flex flex-col w-full pt-20 md:pt-60 lg:px-28 items-center">
+        <h2 className="font-serif font-semibold text-3xl md:text-5xl pb-10">
+          Useful Links
+        </h2>
+        <div className="w-full md:hidden">
+          <Swiper
+            // install Swiper modules
+            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+            spaceBetween={50}
+            slidesPerView={1}
+            navigation
+            rewind={true}
+            pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
+            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => console.log("slide change")}
+          >
+            <SwiperSlide>
+              <ResourceOne />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ResourceTwo />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ResourceThree />
+            </SwiperSlide>
+            <SwiperSlide>
+              <ResourceOne />
+            </SwiperSlide>
+          </Swiper>
+        </div>
+        <div className="hidden md:grid grid-cols-1 lg:grid-cols-2 gap-5">
+          <ResourceOne />
+          <ResourceTwo />
+          <ResourceThree />
+          <ResourceOne />
+        </div>
+        <div className="hidden md:flex flex-col items-center mt-10">
+          <p>Would like to know more about our services?</p>
+          <button className="mt-5 bg-transparent hover:bg-white text-white font-semibold hover:text-gray-800 py-2 px-4 border border-white hover:border-transparent rounded">
+            Contact Jane Rukaria Law
+          </button>
+        </div>
       </div>
-      <div className="hidden md:grid grid-cols-1 lg:grid-cols-2 gap-5">
-        <ResourceOne />
-        <ResourceTwo />
-        <ResourceThree />
-        <ResourceOne />
-      </div>
-      <div className="hidden md:flex flex-col items-center mt-10">
-        <p>Would like to know more about our services?</p>
-        <button className="mt-5 bg-transparent hover:bg-white text-white font-semibold hover:text-gray-800 py-2 px-4 border border-white hover:border-transparent rounded">
-          Contact Jane Rukaria Law
-        </button>
-      </div>
-    </div>
+    </SectionWrapper>
   );
 };
 
