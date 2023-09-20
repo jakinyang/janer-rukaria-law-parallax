@@ -40,18 +40,18 @@ const NavBar: React.FC = () => {
           <ul className="hidden lg:flex justify-end space-x-4">
             {navItems.map((item) => (
               <li key={item.id}>
-                <Link
-                  to={item.id}
-                  spy={true}
-                  smooth={true}
-                  offset={-70}
-                  duration={500}
+                <a
+                  href={"#" + item.id}
+                  // spy={true}
+                  // smooth={true}
+                  // offset={-70}
+                  // duration={500}
                   className="font-serif text-xl p-2 cursor-pointer"
                 >
                   <p className="neobrutalist-nav lg:px-2 font-sans">
                     {item.label}
                   </p>
-                </Link>
+                </a>
               </li>
             ))}
           </ul>

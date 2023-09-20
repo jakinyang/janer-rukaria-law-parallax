@@ -32,7 +32,7 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <SectionWrapper>
+    <SectionWrapper id="contactForm">
       <div>
         {/* <h2>Contact Us</h2> */}
 

@@ -197,7 +197,7 @@ const ItemSeven: React.FC = () => {
 
 const ImmigrationAssessment: React.FC = () => {
   return (
-    <SectionWrapper>
+    <SectionWrapper id="assessment">
       <div className="flex flex-col w-full pt-20 md:pt-80 items-center">
         <h2 className="font-serif font-semibold text-3xl text-center md:text-5xl">
           Immigration Assessment

@@ -7,6 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import SectionWrapper from "./SectionWrapper";
 
 const Ratings: React.FC = (numOfStar) => {
   return (
@@ -67,85 +68,87 @@ const Ratings: React.FC = (numOfStar) => {
 
 const Testimonials: React.FC = () => {
   return (
-    <div className="pt-32 md:pt-80 md:pb-48 flex justify-center">
-      <div className="w-[90%] lg:w-[60%]">
-        <Swiper
-          // install Swiper modules
-          modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
-          spaceBetween={50}
-          slidesPerView={1}
-          navigation
-          speed={2000}
-          rewind={true}
-          autoplay={{ delay: 4000, disableOnInteraction: false }}
-          pagination={{ clickable: true }}
-          scrollbar={{ draggable: true }}
-          onSwiper={(swiper) => console.log(swiper)}
-          onSlideChange={() => console.log("slide change")}
-        >
-          <SwiperSlide>
-            <div className="bg-[#F8F8F8] bg-testimonials3 bg-contain bg-center bg-no-repeat h-[300px] rounded-xl text-gray-800">
-              <div className="flex flex-col items-center justify-center pt-10">
-                <p className="w-[95%] md:w-[60%] md:pt-5">
-                  <a className="font-semibold text-xl md:text-2xl font-serif">
-                    Amazing Service!
-                  </a>{" "}
-                  Im baby church-key schlitz paleo slow-carb shoreditch, pabst
-                  crucifix fixie solarpunk fam. Bruh brunch tofu raw denim
-                  scenester keffiyeh kitsch gentrify shoreditch before they sold
-                  out bicycle rights knausgaard pug shabby chic venmo.
-                </p>
-                <div className="w-[95%] md:w-[60%] flex flex-col items-start pt-3 md:pt-5">
-                  <Ratings />
-                  <h2 className="md:text-xl">Jackson Powers</h2>
-                  <h3 className="md:pb-5">Enterpreneur</h3>
+    <SectionWrapper id="testimonials">
+      <div className="pt-32 md:pt-80 md:pb-48 flex justify-center">
+        <div className="w-full lg:w-[60%]">
+          <Swiper
+            // install Swiper modules
+            modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
+            spaceBetween={50}
+            slidesPerView={1}
+            navigation
+            speed={2000}
+            rewind={true}
+            autoplay={{ delay: 4000, disableOnInteraction: false }}
+            pagination={{ clickable: true }}
+            scrollbar={{ draggable: true }}
+            onSwiper={(swiper) => console.log(swiper)}
+            onSlideChange={() => console.log("slide change")}
+          >
+            <SwiperSlide>
+              <div className="bg-[#F8F8F8] bg-testimonials3 bg-contain bg-center bg-no-repeat h-[300px] rounded-xl text-gray-800">
+                <div className="flex flex-col items-center justify-center pt-10">
+                  <p className="w-[95%] md:w-[60%] md:pt-5">
+                    <a className="font-semibold text-xl md:text-2xl font-serif">
+                      Amazing Service!
+                    </a>{" "}
+                    Im baby church-key schlitz paleo slow-carb shoreditch, pabst
+                    crucifix fixie solarpunk fam. Bruh brunch tofu raw denim
+                    scenester keffiyeh kitsch gentrify shoreditch before they
+                    sold out bicycle rights knausgaard pug shabby chic venmo.
+                  </p>
+                  <div className="w-[95%] md:w-[60%] flex flex-col items-start pt-3 md:pt-5">
+                    <Ratings />
+                    <h2 className="md:text-xl">Jackson Powers</h2>
+                    <h3 className="md:pb-5">Enterpreneur</h3>
+                  </div>
                 </div>
               </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="bg-[#F8F8F8] bg-testimonials3 bg-contain bg-center bg-no-repeat h-[300px] rounded-xl text-gray-800">
-              <div className="flex flex-col items-center justify-center pt-10">
-                <p className="w-[95%] md:w-[60%] md:pt-5">
-                  <a className="font-semibold text-xl md:text-2xl font-serif">
-                    Amazing Service!
-                  </a>{" "}
-                  Im baby church-key schlitz paleo slow-carb shoreditch, pabst
-                  crucifix fixie solarpunk fam. Bruh brunch tofu raw denim
-                  scenester keffiyeh kitsch gentrify shoreditch before they sold
-                  out bicycle rights knausgaard pug shabby chic venmo.
-                </p>
-                <div className="w-[95%] md:w-[60%] flex flex-col items-start pt-3 md:pt-5">
-                  <Ratings />
-                  <h2 className="md:text-xl">Jackson Powers</h2>
-                  <h3 className="md:pb-5">Enterpreneur</h3>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="bg-[#F8F8F8] bg-testimonials3 bg-contain bg-center bg-no-repeat h-[300px] rounded-xl text-gray-800">
+                <div className="flex flex-col items-center justify-center pt-10">
+                  <p className="w-[95%] md:w-[60%] md:pt-5">
+                    <a className="font-semibold text-xl md:text-2xl font-serif">
+                      Amazing Service!
+                    </a>{" "}
+                    Im baby church-key schlitz paleo slow-carb shoreditch, pabst
+                    crucifix fixie solarpunk fam. Bruh brunch tofu raw denim
+                    scenester keffiyeh kitsch gentrify shoreditch before they
+                    sold out bicycle rights knausgaard pug shabby chic venmo.
+                  </p>
+                  <div className="w-[95%] md:w-[60%] flex flex-col items-start pt-3 md:pt-5">
+                    <Ratings />
+                    <h2 className="md:text-xl">Jackson Powers</h2>
+                    <h3 className="md:pb-5">Enterpreneur</h3>
+                  </div>
                 </div>
               </div>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-          <div className="bg-[#F8F8F8] bg-testimonials3 bg-contain bg-center bg-no-repeat h-[300px] rounded-xl text-gray-800">
-              <div className="flex flex-col items-center justify-center pt-10">
-                <p className="w-[95%] md:w-[60%] md:pt-5">
-                  <a className="font-semibold text-xl md:text-2xl font-serif">
-                    Amazing Service!
-                  </a>{" "}
-                  Im baby church-key schlitz paleo slow-carb shoreditch, pabst
-                  crucifix fixie solarpunk fam. Bruh brunch tofu raw denim
-                  scenester keffiyeh kitsch gentrify shoreditch before they sold
-                  out bicycle rights knausgaard pug shabby chic venmo.
-                </p>
-                <div className="w-[95%] md:w-[60%] flex flex-col items-start pt-3 md:pt-5">
-                  <Ratings />
-                  <h2 className="md:text-xl">Jackson Powers</h2>
-                  <h3 className="md:pb-5">Enterpreneur</h3>
+            </SwiperSlide>
+            <SwiperSlide>
+              <div className="bg-[#F8F8F8] bg-testimonials3 bg-contain bg-center bg-no-repeat h-[300px] rounded-xl text-gray-800">
+                <div className="flex flex-col items-center justify-center pt-10">
+                  <p className="w-[95%] md:w-[60%] md:pt-5">
+                    <a className="font-semibold text-xl md:text-2xl font-serif">
+                      Amazing Service!
+                    </a>{" "}
+                    Im baby church-key schlitz paleo slow-carb shoreditch, pabst
+                    crucifix fixie solarpunk fam. Bruh brunch tofu raw denim
+                    scenester keffiyeh kitsch gentrify shoreditch before they
+                    sold out bicycle rights knausgaard pug shabby chic venmo.
+                  </p>
+                  <div className="w-[95%] md:w-[60%] flex flex-col items-start pt-3 md:pt-5">
+                    <Ratings />
+                    <h2 className="md:text-xl">Jackson Powers</h2>
+                    <h3 className="md:pb-5">Enterpreneur</h3>
+                  </div>
                 </div>
               </div>
-            </div>
-          </SwiperSlide>
-        </Swiper>
+            </SwiperSlide>
+          </Swiper>
+        </div>
       </div>
-    </div>
+    </SectionWrapper>
   );
 };
 

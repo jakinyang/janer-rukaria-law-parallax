@@ -22,7 +22,7 @@ const Services: React.FC = () => {
   });
 
   return (
-    <SectionWrapper>
+    <SectionWrapper id="services">
       <div className="flex flex-col w-full pt-10 md:pt-60 md:px-20 items-center">
         <div className="flex flex-col gap-10 lg:flex-row lg:gap-10">
           <div className="lg:w-[30%]">

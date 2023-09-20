@@ -12,7 +12,7 @@ const Paragraph: React.FC = () => {
             alt="Jane Rukaria profile picture"
             width={400}
             height={400}
-            className="max-w-md"
+            className="max-w-md rounded-full"
           />
         </div>
         <div className="flex-col">
