@@ -1,12 +1,12 @@
-import React from 'react';
-import { Parallax } from '@react-spring/parallax';
-import { ContentLayer } from '@/components/ContentLayer';
-import { BackgroundLayer } from '@/components/BackgroundLayer';
+import React from "react";
+import { Parallax } from "@react-spring/parallax";
+import { ContentLayer } from "@/components/ContentLayer";
+import { BackgroundLayer } from "@/components/BackgroundLayer";
 
 const App: React.FC = () => {
   return (
     <div className="w-full h-full">
-      <Parallax
+      {/* <Parallax
         pages={8}
         innerStyle={{
           position: 'absolute',
@@ -18,9 +18,9 @@ const App: React.FC = () => {
           top: '0',
           left: '0',
         }}>
-          <ContentLayer />
           <BackgroundLayer />
-      </Parallax>
+      </Parallax> */}
+      <ContentLayer />
     </div>
   );
 };

@@ -7,15 +7,6 @@ const About: React.FC = () => {
     <SectionWrapper id="about">
       <div className="flex w-full md:pt-60 justify-center items-center">
         <div className="flex-col">
-          <div className="flex justify-center md:hidden">
-            <Image
-              src={"/images/jane-profile-1.svg"}
-              alt="Profile Picture"
-              width={300}
-              height={300}
-              className="pb-10"
-            />
-          </div>
           <h2 className="brutalist-title text-3xl md:text-4xl max-w-lg mb-4 lg:mb-8 font-serif font-semibold lg:pl-10">
             <a className="md:text-gray-800">About</a> Jane Rukaria Law
           </h2>

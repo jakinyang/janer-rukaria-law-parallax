@@ -9,8 +9,8 @@ const NavBar: React.FC = () => {
     // { label: 'Top Banner', id: 'topBanner' },
     { label: "About", id: "about" },
     { label: "Services", id: "services" },
-    { label: "Immigration Assessment", id: "assessment" },
-    { label: "Why need a lawyer", id: "why" },
+    { label: "Immigration Pathways", id: "assessment" },
+    // { label: "Why need a lawyer", id: "why" },
     { label: "Resources", id: "resources" },
     { label: "Testimonials", id: "testimonials" },
     { label: "Contact", id: "contactForm" },
@@ -18,26 +18,19 @@ const NavBar: React.FC = () => {
 
   return (
     <SectionWrapper id="nav">
-      <nav className="fixed top-0 left-0 w-full bg-black p-4">
-        <div className="flex justify-between">
+      <nav className="fixed top-0 left-0 w-full bg-black py-4 px-8">
+        <div className="flex justify-between items-center">
           <Image
-            src="/../public/images/logo-nav.png"
-            width={150}
-            height={150}
+            src="/../public/images-new/logo.png"
+            width={55}
+            height={48}
             alt="logo"
-            className="w-[30%] h-[30%] pt-1 md:hidden"
-          />
-          <Image
-            src="/../public/images/logo-nav.png"
-            width={150}
-            height={150}
-            alt="logo"
-            className="hidden md:block"
+            className=""
           />
           <div className="lg:hidden z-100">
             <HamburgerMenu />
           </div>
-          <ul className="hidden lg:flex justify-end space-x-4">
+          <ul className="hidden lg:flex gap-10">
             {navItems.map((item) => (
               <li key={item.id}>
                 <a
@@ -46,9 +39,9 @@ const NavBar: React.FC = () => {
                   // smooth={true}
                   // offset={-70}
                   // duration={500}
-                  className="font-serif text-xl p-2 cursor-pointer"
+                  className="text-xl font-thin"
                 >
-                  <p className="neobrutalist-nav lg:px-2 font-sans">
+                  <p className="neobrutalist-nav">
                     {item.label}
                   </p>
                 </a>

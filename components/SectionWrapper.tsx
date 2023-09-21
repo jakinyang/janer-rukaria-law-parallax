@@ -9,7 +9,7 @@ const SectionWrapper: React.FC<SectionWrapperProps> = ({ id, children }) => {
   return (
     <section
       id={id}
-      className="p-4 m-4"
+      className="p-8 min-w-full max-w-[1100px]"
     >
       {children}
     </section>

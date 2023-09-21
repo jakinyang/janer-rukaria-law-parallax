@@ -99,3 +99,49 @@ span.swiper-pagination-bullet-active {
 img.resourceImg {
   object-fit: cover;
 }
+
+.highlight-trust {
+  position: relative;
+}
+
+.highlight-trust::before {
+  content: "";
+  width: 7rem;
+  height: 1.5rem;
+  background-color: #B34A22;
+  position: absolute;
+  transform: translate(-15rem, -0.5rem);
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+}
+
+.highlight-family {
+  position: relative;
+}
+
+.highlight-family::before {
+  content: "";
+  width: 8.75rem;
+  height: 1.5rem;
+  background-color: #B34A22;
+  position: absolute;
+  transform: translate(-14.5rem, -0.5rem);
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+}
+
+@media (min-width: 768px) {
+  .highlight-trust::before {
+    width: 10rem;
+    height: 2.5rem;
+    transform: translate(-25rem, -0.5rem);
+  }
+
+  .highlight-family::before {
+    transform: translate(-19.5rem, -0.5rem);
+    width: 13rem;
+    height: 2.5rem;
+  }
+}
