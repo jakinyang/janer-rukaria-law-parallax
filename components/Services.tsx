@@ -10,8 +10,7 @@ interface ServiceData {
 const Services: React.FC = () => {
   const servicesList = services.map((service: ServiceData, i) => {
     return (
-      <div className="" key={i}>
-        <hr />
+      <div className="top-0 border-t-[1px]" key={i}>
         <div className="flex items-center gap-2 mt-5 mb-5 font-bookmania2 text-xl  font-semibold">
           <img src="/../images/diamond.png" alt="" className="w-auto h-6" />
           <p>{service.name}</p>
@@ -24,7 +23,7 @@ const Services: React.FC = () => {
   return (
     <SectionWrapper id="services">
       <div className="flex flex-col w-full pt-10 md:pt-60 md:px-20 items-center">
-        <div className="flex flex-col gap-10 lg:flex-row lg:gap-10">
+        <div className="flex flex-col justify-between lg:flex-row gap-10">
           <div className="lg:w-[30%]">
             <h2 className="font-serif font-semibold text-3xl md:text-5xl">
               Our Services
@@ -32,48 +31,15 @@ const Services: React.FC = () => {
             {/* <h3 className="text-2xl pt-10 pb-5">
             Why would I need a lawyer to handle my immigration matter?
           </h3> */}
-            <p className="md:text-lg pt-10">
+            <p className="md:text-lg pt-4">
               Our main area of practice is immigration and refugee protection
               law although we also offer our clients services in other areas of
               law.
             </p>
           </div>
-          <div className="lg:w-[70%] grid grid-cols-1 md:grid-cols-2 items-start justify-center gap-10 2xl:text-xl">
+          <div className="lg:w-[70%] grid grid-cols-1 items-start justify-center gap-10 2xl:text-xl max-w-3xl">
             {servicesList}
-            <div className="">
-              <hr />
-              <div className="flex items-center gap-2 mt-5 mb-5 font-bookmania2 text-xl  font-semibold">
-                <img
-                  src="/../images/diamond.png"
-                  alt=""
-                  className="w-auto h-6"
-                />
-                <p>Personal Injury</p>
-              </div>
-              <div className="md:pb-10 font-novatest">
-                Im baby church-key schlitz paleo slow-carb shoreditch, pabst
-                crucifix fixie solarpunk fam. Im baby church-key schlitz paleo
-                slow-carb shoreditch, pabst crucifix fixie solarpunk fam.
-              </div>
-              <hr className="hidden md:block" />
-            </div>
-            <div className="">
-              <hr />
-              <div className="flex items-center gap-2 mt-5 mb-5 font-bookmania2 text-xl  font-semibold">
-                <img
-                  src="/../images/diamond.png"
-                  alt=""
-                  className="w-auto h-6"
-                />
-                <p>Company Law</p>
-              </div>
-              <div className="pb-10 font-novatest">
-                Im baby church-key schlitz paleo slow-carb shoreditch, pabst
-                crucifix fixie solarpunk fam. Im baby church-key schlitz paleo
-                slow-carb shoreditch, pabst crucifix fixie solarpunk fam.
-              </div>
-              <hr />
-            </div>
+            <hr />
           </div>
         </div>
         <div className="flex flex-col items-center mt-10">

@@ -42,7 +42,7 @@ const About: React.FC = () => {
   }, [])
   return (
     <SectionWrapper id="about">
-      <div className="flex w-full md:pt-60 justify-center items-center">
+      <div className="flex w-full md:pt-[83px] justify-center items-center">
         <div className="hidden lg:block relative">
           <Image
             src={"/images-new/image-about.png"}
