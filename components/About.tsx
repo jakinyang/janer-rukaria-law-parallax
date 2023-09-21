@@ -1,14 +1,76 @@
+import { gsap } from "gsap";
+import { useRef, useEffect } from "react";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import Image from "next/image";
 
 import SectionWrapper from "./SectionWrapper";
 
+gsap.registerPlugin(ScrollTrigger);
+
 const About: React.FC = () => {
+  const imageRef1 = useRef(null);
+  const imageRef2 = useRef(null);
+
+  useEffect(() => {
+    const el1 = imageRef1.current;
+
+    gsap.to(el1, {
+      scrollTrigger: {
+        trigger: el1,
+        start: "top bottom",
+        end: "bottom 100px",
+        scrub: 5,
+      },
+      y: -50,
+      ease: "none",
+      duration: 5
+    })
+
+    const el2 = imageRef2.current;
+
+    gsap.to(el2, {
+      scrollTrigger: {
+        trigger: el2,
+        start: "center bottom",
+        end: "top top",
+        scrub: 3,
+      },
+      y: -200,
+      ease: "none",
+      duration: 3
+    })
+  }, [])
   return (
     <SectionWrapper id="about">
       <div className="flex w-full md:pt-60 justify-center items-center">
+        <div className="hidden lg:block relative">
+          <Image
+            src={"/images-new/image-about.png"}
+            alt="Jane Rukaria profile picture"
+            width={400}
+            height={400}
+            className="max-w-md"
+          />
+          <Image
+            src={"/images/red-5.svg"}
+            alt="Profile Picture"
+            width={600}
+            height={200}
+            className="hidden lg:block absolute top-0 m-auto -z-20"
+            ref={imageRef2}
+            />
+          <Image
+            src={"/images/red-4.svg"}
+            alt="Profile Picture"
+            width={200}
+            height={100}
+            className="hidden lg:block absolute -left-10 top-0 bottom-0 m-auto -z-10"
+            ref={imageRef1}
+          />
+        </div>
         <div className="flex-col">
           <h2 className="brutalist-title text-3xl md:text-4xl max-w-lg mb-4 lg:mb-8 font-serif font-semibold lg:pl-10">
-            <a className="md:text-gray-800">About</a> Jane Rukaria Law
+            About the <span className="text-[#E4483A]">Founder</span>
           </h2>
           <div className="">
             <p className="brutalist-title lg:text-xl max-w-2xl lg:pl-10">
@@ -34,19 +96,10 @@ const About: React.FC = () => {
             </p>
           </div>
           <div className="lg:pl-10">
-            <button className="mt-5 bg-transparent hover:bg-white font-semibold md:hover:text-gray-800 py-2 px-4 border hover:border-transparent rounded">
+            <button className="mt-8 bg-transparent hover:bg-white font-semibold md:hover:text-gray-800 py-2 px-4 border hover:border-transparent rounded">
               Contact Jane Rukaria Law
             </button>
           </div>
-        </div>
-        <div className="hidden lg:block">
-          <Image
-            src={"/images/jane-profile-2.png"}
-            alt="Jane Rukaria profile picture"
-            width={400}
-            height={400}
-            className="max-w-md"
-          />
         </div>
       </div>
     </SectionWrapper>

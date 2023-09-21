@@ -103,11 +103,11 @@ img.resourceImg {
 
 .highlight-trust::before {
   content: "";
-  width: 7rem;
+  width: 6.5rem;
   height: 1.5rem;
   background-color: #B34A22;
   position: absolute;
-  transform: translate(-15rem, -0.5rem);
+  transform: translate(-14.25rem, -0.5rem);
   z-index: -1;
   bottom: 0;
   left: 0;
@@ -119,11 +119,11 @@ img.resourceImg {
 
 .highlight-family::before {
   content: "";
-  width: 8.75rem;
+  width: 8.5rem;
   height: 1.5rem;
   background-color: #B34A22;
   position: absolute;
-  transform: translate(-14.5rem, -0.5rem);
+  transform: translate(-14.25rem, -0.5rem);
   z-index: -1;
   bottom: 0;
   left: 0;
@@ -133,11 +133,11 @@ img.resourceImg {
   .highlight-trust::before {
     width: 10rem;
     height: 2.5rem;
-    transform: translate(-25rem, -0.5rem);
+    transform: translate(-23.25rem, -0.5rem);
   }
 
   .highlight-family::before {
-    transform: translate(-19.5rem, -0.5rem);
+    transform: translate(-19.1rem, -0.5rem);
     width: 13rem;
     height: 2.5rem;
   }

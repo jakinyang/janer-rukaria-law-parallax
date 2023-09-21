@@ -17,8 +17,9 @@ const NavBar: React.FC = () => {
   ];
 
   return (
-      <nav className="fixed top-0 left-0 w-full bg-[#232222] py-4 px-8">
-        <div className="flex justify-between items-center">
+    <nav className="fixed top-0 left-0 w-full bg-[#232222] py-4 px-8 opacity-90">
+      <div className="flex justify-between items-center">
+        <a href="#top">
           <Image
             src="/../public/images-new/logo.png"
             width={55}
@@ -26,29 +27,28 @@ const NavBar: React.FC = () => {
             alt="logo"
             className=""
           />
-          <div className="lg:hidden z-100">
-            <HamburgerMenu />
-          </div>
-          <ul className="hidden lg:flex gap-10">
-            {navItems.map((item) => (
-              <li key={item.id}>
-                <a
-                  href={"#" + item.id}
-                  // spy={true}
-                  // smooth={true}
-                  // offset={-70}
-                  // duration={500}
-                  className="text-xl font-thin"
-                >
-                  <p className="neobrutalist-nav">
-                    {item.label}
-                  </p>
-                </a>
-              </li>
-            ))}
-          </ul>
+        </a>
+        <div className="lg:hidden z-100">
+          <HamburgerMenu />
         </div>
-      </nav>
+        <ul className="hidden lg:flex gap-10">
+          {navItems.map((item) => (
+            <li key={item.id}>
+              <a
+                href={"#" + item.id}
+                // spy={true}
+                // smooth={true}
+                // offset={-70}
+                // duration={500}
+                className="text-xl font-thin"
+              >
+                <p className="neobrutalist-nav">{item.label}</p>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </nav>
     // <SectionWrapper id="nav">
     // </SectionWrapper>
   );
