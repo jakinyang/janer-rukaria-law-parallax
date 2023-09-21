@@ -40,6 +40,7 @@ const About: React.FC = () => {
       duration: 3
     })
   }, [])
+  
   return (
     <SectionWrapper id="about">
       <div className="flex w-full md:pt-[83px] justify-center items-center">

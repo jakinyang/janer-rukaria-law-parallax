@@ -8,8 +8,8 @@ import Resources from "./Resources";
 import Testimonials from "./Testimonials";
 import ContactForm from "./ContactForm";
 import Footer from "./Footer";
-import ImmigrationAssessment from "./ImmigrationAssessment";
-import Paragraph from "./Paragraph";
+import ImmigrationAssessment from "./ImmigrationPathways";
+import Why from "./Why";
 
 export function ContentLayer() {
   return (
@@ -25,7 +25,7 @@ export function ContentLayer() {
       <About />
       <Services />
       <ImmigrationAssessment />
-      <Paragraph />
+      <Why />
       <Resources />
       <Testimonials />
       <ContactForm />

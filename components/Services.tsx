@@ -10,13 +10,13 @@ interface ServiceData {
 const Services: React.FC = () => {
   const servicesList = services.map((service: ServiceData, i) => {
     return (
-      <div className="top-0 border-t-[1px]" key={i}>
+      <li className="top-0 border-t-[1px]" key={i}>
         <div className="flex items-center gap-2 mt-5 mb-5 font-bookmania2 text-xl  font-semibold">
           <img src="/../images/diamond.png" alt="" className="w-auto h-6" />
-          <p>{service.name}</p>
+          <h3>{service.name}</h3>
         </div>
-        <div className=" font-novatest">{service.description}</div>
-      </div>
+        <p className=" font-novatest">{service.description}</p>
+      </li>
     );
   });
 
@@ -34,10 +34,10 @@ const Services: React.FC = () => {
               law.
             </p>
           </div>
-          <div className="lg:w-[70%] grid grid-cols-1 items-start justify-center gap-10 2xl:text-xl max-w-3xl">
+          <ul className="lg:w-[70%] grid grid-cols-1 items-start justify-center gap-10 2xl:text-xl max-w-3xl">
             {servicesList}
             <hr />
-          </div>
+          </ul>
         </div>
         
         <div className="flex flex-col items-center mt-10">

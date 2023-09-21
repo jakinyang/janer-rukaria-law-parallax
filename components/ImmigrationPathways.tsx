@@ -40,15 +40,15 @@ const PathwayCard: React.FC<PathwayProps> = ({ pathway }) => {
 }
 
 const ImmigrationAssessment: React.FC = () => {
-  const pathwayList = immigration.map((pathway) => {
+  const pathwayList = immigration.map((pathway, i) => {
     return (
-      <PathwayCard pathway={pathway} />
+      <PathwayCard key={i} pathway={pathway} />
     );
   });
 
-  const pathwaySwiperList = immigration.map((pathway) => {
+  const pathwaySwiperList = immigration.map((pathway, i) => {
     return (
-      <SwiperSlide key={pathway.name}>
+      <SwiperSlide key={i}>
         <PathwayCard pathway={pathway} />
       </SwiperSlide>
     );
