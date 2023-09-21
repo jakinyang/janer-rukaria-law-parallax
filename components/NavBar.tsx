@@ -17,8 +17,7 @@ const NavBar: React.FC = () => {
   ];
 
   return (
-    <SectionWrapper id="nav">
-      <nav className="fixed top-0 left-0 w-full bg-black py-4 px-8">
+      <nav className="fixed top-0 left-0 w-full bg-[#232222] py-4 px-8">
         <div className="flex justify-between items-center">
           <Image
             src="/../public/images-new/logo.png"
@@ -50,7 +49,8 @@ const NavBar: React.FC = () => {
           </ul>
         </div>
       </nav>
-    </SectionWrapper>
+    // <SectionWrapper id="nav">
+    // </SectionWrapper>
   );
 };
 

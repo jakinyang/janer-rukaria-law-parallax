@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React from "react";
+
 import SectionWrapper from "./SectionWrapper";
 
 const About: React.FC = () => {
