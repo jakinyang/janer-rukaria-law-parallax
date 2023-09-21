@@ -69,7 +69,7 @@ const About: React.FC = () => {
           />
         </div>
         <div className="flex-col">
-          <h2 className="brutalist-title text-3xl md:text-4xl max-w-lg mb-4 lg:mb-8 font-serif font-semibold lg:pl-10">
+          <h2 className="brutalist-title text-3xl md:text-4xl mb-4 lg:mb-8 font-serif font-semibold lg:pl-10">
             About the <span className="text-[#E4483A]">Founder</span>
           </h2>
           <div className="">
@@ -96,7 +96,7 @@ const About: React.FC = () => {
             </p>
           </div>
           <div className="lg:pl-10">
-            <button className="mt-8 bg-transparent hover:bg-white font-semibold md:hover:text-gray-800 py-2 px-4 border hover:border-transparent rounded">
+            <button className="mt-8 bg-transparent hover:bg-white font-semibold md:hover:text-gray-800 py-2 px-4 border hover:border-transparent rounded duration-200">
               Contact Jane Rukaria Law
             </button>
           </div>

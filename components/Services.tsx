@@ -22,15 +22,12 @@ const Services: React.FC = () => {
 
   return (
     <SectionWrapper id="services">
-      <div className="flex flex-col w-full pt-10 md:pt-60 md:px-20 items-center">
-        <div className="flex flex-col justify-between lg:flex-row gap-10">
+      <div className="flex flex-col pt-10 md:pt-[83px] items-center">
+        <div className="flex flex-col justify-between md:flex-row gap-10">
           <div className="lg:w-[30%]">
             <h2 className="font-serif font-semibold text-3xl md:text-5xl">
               Our Services
             </h2>
-            {/* <h3 className="text-2xl pt-10 pb-5">
-            Why would I need a lawyer to handle my immigration matter?
-          </h3> */}
             <p className="md:text-lg pt-4">
               Our main area of practice is immigration and refugee protection
               law although we also offer our clients services in other areas of
@@ -42,9 +39,10 @@ const Services: React.FC = () => {
             <hr />
           </div>
         </div>
+        
         <div className="flex flex-col items-center mt-10">
           <p>Would like to know more about our services?</p>
-          <button className="mt-5 bg-transparent hover:bg-white text-white font-semibold hover:text-gray-800 py-2 px-4 border border-white hover:border-transparent rounded">
+          <button className="mt-5 bg-transparent hover:bg-white text-white font-semibold hover:text-gray-800 py-2 px-4 border border-white hover:border-transparent rounded duration-200">
             Contact Jane Rukaria Law
           </button>
         </div>

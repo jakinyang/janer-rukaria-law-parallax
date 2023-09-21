@@ -34,7 +34,7 @@ const HamburgerMenu: React.FC = () => {
 
 
 return (
-  <SectionWrapper id="hamburgerMenu">
+  <SectionWrapper id="hamburgerMenu" className='p-0'>
     <button onClick={toggleDrawer}><FaBars /></button>
     <Drawer
         open={isOpen}
