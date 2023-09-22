@@ -60,7 +60,7 @@ const ImmigrationAssessment: React.FC = () => {
         <h2 className="font-serif font-semibold text-3xl text-center md:text-5xl">
           Immigration Pathways
         </h2>
-        <h3 className="max-w-3xl text-center py-5 md:pt-4 md:pb-0">
+        <p className="max-w-3xl text-center py-5 md:pt-4 md:pb-0">
           There are several main ways to &quot;immigrate&quot; to Canada.
           <Link
             href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry.html"
@@ -72,7 +72,7 @@ const ImmigrationAssessment: React.FC = () => {
           </Link>{" "}
           explains each category in detail. We suggest that you visit the CIC
           site and understand which category may apply to you.
-        </h3>
+        </p>
         <div className="w-full mt-4 md:hidden">
           <Swiper
             // install Swiper modules

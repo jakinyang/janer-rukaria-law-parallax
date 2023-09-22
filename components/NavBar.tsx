@@ -2,7 +2,6 @@ import Image from "next/image";
 import React from "react";
 import { Link } from "react-scroll";
 import HamburgerMenu from "./HamburgerMenu";
-import SectionWrapper from "./SectionWrapper";
 
 const NavBar: React.FC = () => {
   const navItems = [

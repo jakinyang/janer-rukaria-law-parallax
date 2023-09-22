@@ -66,11 +66,11 @@ const ContactForm: React.FC = () => {
         // <button type="submit">Send Message</button>
         //{" "}
       </form> */}
-        <div className="lg:mt-[250px] flex flex-col">
+        <div className="lg:mt-[6.5rem] flex flex-col">
           <div className="container mx-auto my-4">
-            <h1 className="font-bold text-3xl mb-5 md:text-5xl">
+            <h2 className="font-bold text-3xl mb-5 md:text-5xl">
               Send us a message
-            </h1>
+            </h2>
             <div className="grid gap-10 lg:grid-cols-5">
               <div className="rounded-2xl lg:col-span-3">
                 <form onSubmit={handleSubmit}>
@@ -135,17 +135,17 @@ const ContactForm: React.FC = () => {
 
               <div className="px-8 py-12 bg-blue-900 rounded-2xl lg:col-span-2">
                 <div className="flex flex-col text-white">
-                  <h1 className="font-bold text-3xl md:text-4xl">
+                  <h3 className="font-bold text-3xl md:text-4xl">
                     Drop in our office
-                  </h1>
+                  </h3>
 
                   <div className="flex my-4 md:w-2/3 lg:w-full">
                     {/* <div className="flex flex-col">
                       <i className="fas fa-map-marker-alt pt-2 pr-2" />
                     </div> */}
                     <div className="flex flex-col">
-                      <h2 className="text-2xl">Jane Gatwiri Rukaria</h2>
-                      <h3>Barrister and Solicitor</h3>
+                      <p className="text-2xl">Jane Gatwiri Rukaria</p>
+                      <p>Barrister and Solicitor</p>
                       <p className="text-gray-400">
                         Suite 205 3256 Cambie Street, Vancouver, BC Canada V5Z
                         2W4
