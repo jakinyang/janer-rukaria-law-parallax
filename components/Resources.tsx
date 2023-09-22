@@ -58,7 +58,7 @@ const Resources: React.FC = () => {
 
   return (
     <SectionWrapper id="resources">
-      <div className="flex flex-col w-full pt-20 md:pt-[83px] items-center">
+      <div className="flex flex-col w-full pt-20 md:pt-[6.5rem] items-center">
         <h2 className="font-serif font-semibold text-3xl md:text-5xl pb-10">
           Helpful Resources
         </h2>
@@ -81,12 +81,12 @@ const Resources: React.FC = () => {
         <ul className="hidden md:grid grid-cols-1 lg:grid-cols-3 gap-5">
           {resourceList}
         </ul>
-        {/* <div className="hidden md:flex flex-col items-center mt-10">
+        <div className="hidden md:flex flex-col items-center mt-10">
           <p>Would like to know more about our services?</p>
-          <button className="mt-5 bg-transparent hover:bg-white text-white font-semibold hover:text-gray-800 py-2 px-4 border border-white hover:border-transparent rounded">
+          <button className="mt-5 bg-transparent hover:bg-white text-white font-semibold hover:text-gray-800 py-2 px-4 border border-white hover:border-transparent rounded duration-200">
             Contact Jane Rukaria Law
           </button>
-        </div> */}
+        </div>
       </div>
     </SectionWrapper>
   );

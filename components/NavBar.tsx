@@ -20,13 +20,7 @@ const NavBar: React.FC = () => {
     <nav className="fixed top-0 left-0 w-full bg-[#232222] py-4 px-8 opacity-90 z-10">
       <div className="flex justify-between items-center">
         <a href="#top">
-          <Image
-            src="/../public/images-new/logo.png"
-            width={55}
-            height={48}
-            alt="logo"
-            className=""
-          />
+          <img src="/images-new/logo.svg" alt="logo" className="w-[105px]" />
         </a>
         <div className="lg:hidden z-100">
           <HamburgerMenu />
@@ -40,7 +34,7 @@ const NavBar: React.FC = () => {
                 // smooth={true}
                 // offset={-70}
                 // duration={500}
-                className="text-xl font-thin"
+                className="text-xl font-thin hover:opacity-70 duration-200"
               >
                 <p className="neobrutalist-nav">{item.label}</p>
               </a>

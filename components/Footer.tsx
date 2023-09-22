@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer: React.FC = () => {
   return (
-    <div className="flex flex-col items-center py-40">
+    <div className="flex flex-col items-center py-20 px-4">
       <div className="w-[95%] md:w-[50%] text-center">
         <h1 className="text-3xl pb-3">Jane Rukaria Law</h1>
         <div className="flex justify-center gap-3 pb-3">
@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
         <p className="pb-3">
           Business Immigrants - Skilled Workers - Family Sponsorship - Study
           Permits - Provincial Nominees - International Adoption Wills &amp;
-          Estates - Family Law - Company Law - Personal Injury
+          Estates - Family Law
         </p>
       </div>
       <div className="flex gap-3 pb-3">
