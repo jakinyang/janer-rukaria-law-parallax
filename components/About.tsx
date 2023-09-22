@@ -97,7 +97,7 @@ const About: React.FC = () => {
             </p>
           </div>
           <div className="lg:pl-10 mt-8">
-            <a href="#contactForm" className="bg-transparent hover:bg-white font-semibold md:hover:text-gray-800 py-2 px-4 border hover:border-transparent rounded duration-200">
+            <a href="#contactForm" className="bg-transparent hover:bg-white duration-200 font-semibold hover:text-gray-800 py-2 px-4 border hover:border-transparent rounded">
               Contact Jane Rukaria Law
             </a>
           </div>
