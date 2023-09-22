@@ -32,12 +32,12 @@ const Why: React.FC = () => {
       scrollTrigger: {
         trigger: el2,
         start: "center bottom",
-        end: "top top",
+        end: "bottom top",
         scrub: 3,
       },
       y: -200,
       ease: "none",
-      duration: 3,
+      duration: 6,
     });
   }, []);
 
@@ -93,7 +93,7 @@ const Why: React.FC = () => {
             alt="Profile Picture"
             width={700}
             height={200}
-            className="hidden lg:block absolute top-[10%] m-auto right-[-15%] -z-20"
+            className="hidden lg:block absolute top-[5%] m-auto right-[-15%] -z-20"
             ref={imageRef2}
           />
           <Image

@@ -23,7 +23,7 @@ interface PathwayProps {
 
 const PathwayCard: React.FC<PathwayProps> = ({ pathway }) => {
   return (
-    <li key={pathway.name} className="bg-[#F17B89] bg-opacity-40 hover:bg-opacity-90 duration-200 shadow-xl rounded-xl min-h-[23rem] md:min-h-min">
+    <li key={pathway.name} className="bg-[#F17B89] bg-opacity-40 hover:bg-opacity-80 duration-200 shadow-xl rounded-xl min-h-[23rem] md:min-h-min">
         <Link
           href={pathway.link}
           target="blank"
@@ -73,7 +73,7 @@ const ImmigrationAssessment: React.FC = () => {
           explains each category in detail. We suggest that you visit the CIC
           site and understand which category may apply to you.
         </h3>
-        <div className="w-full md:hidden">
+        <div className="w-full mt-4 md:hidden">
           <Swiper
             // install Swiper modules
             modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
@@ -84,7 +84,7 @@ const ImmigrationAssessment: React.FC = () => {
             pagination={{ clickable: true }}
             // scrollbar={{ draggable: true }}
             // onSwiper={(swiper) => console.log(swiper)}
-            // onSlideChange={() => console.log("slide change")}
+            // onSlideChange={() => console.log("slide change")} 
           >
             {pathwaySwiperList}
           </Swiper>
