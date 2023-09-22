@@ -74,10 +74,10 @@ const Why: React.FC = () => {
               One you can trust your family’s future with.
             </p>
           </div>
-          <div className="">
-            <button className="mt-8 bg-transparent hover:bg-white duration-200 font-semibold hover:text-gray-800 py-2 px-4 border hover:border-transparent rounded">
+          <div className="mt-12">
+            <a href="#contactForm" className="bg-transparent hover:bg-white duration-200 font-semibold hover:text-gray-800 py-2 px-4 border hover:border-transparent rounded">
               Contact Jane Rukaria Law
-            </button>
+            </a>
           </div>
         </div>
         <div className="hidden lg:block">

@@ -83,9 +83,9 @@ const Resources: React.FC = () => {
         </ul>
         <div className="hidden md:flex flex-col items-center mt-10">
           <p>Would like to know more about our services?</p>
-          <button className="mt-5 bg-transparent hover:bg-white text-white font-semibold hover:text-gray-800 py-2 px-4 border border-white hover:border-transparent rounded duration-200">
+          <a href="#contactForm" className="mt-5 bg-transparent hover:bg-white text-white font-semibold hover:text-gray-800 py-2 px-4 border border-white hover:border-transparent rounded duration-200">
             Contact Jane Rukaria Law
-          </button>
+          </a>
         </div>
       </div>
     </SectionWrapper>

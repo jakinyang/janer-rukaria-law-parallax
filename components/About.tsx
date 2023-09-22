@@ -43,7 +43,7 @@ const About: React.FC = () => {
   
   return (
     <SectionWrapper id="about">
-      <div className="flex w-full pt-[6.5rem] justify-center items-center">
+      <div className="flex w-full md:pt-[6.5rem] justify-center items-center">
         <div className="hidden lg:block relative">
           <Image
             src={"/images-new/image-about.png"}
@@ -96,10 +96,10 @@ const About: React.FC = () => {
               good use in serving her clients and community.
             </p>
           </div>
-          <div className="lg:pl-10">
-            <button className="mt-8 bg-transparent hover:bg-white font-semibold md:hover:text-gray-800 py-2 px-4 border hover:border-transparent rounded duration-200">
+          <div className="lg:pl-10 mt-8">
+            <a href="#contactForm" className="bg-transparent hover:bg-white font-semibold md:hover:text-gray-800 py-2 px-4 border hover:border-transparent rounded duration-200">
               Contact Jane Rukaria Law
-            </button>
+            </a>
           </div>
         </div>
       </div>
