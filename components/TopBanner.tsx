@@ -44,7 +44,7 @@ const TopBanner: React.FC = () => {
   return (
     <SectionWrapper id="top">
       <div className=" top-10 md:top-32 flex flex-col md:flex-row gap-12 w-full justify-center items-center h-screen">
-        <div className="text-center md:text-left pt-20 md:pt-0">
+        <div className="text-center md:text-left md:pt-0">
           <h1 className="text-5xl md:text-7xl font-medium neobrutalist-title w-[12ch] md:w-[11ch] mb-6">
             One you can <span className="highlight-trust">trust</span> your{" "}
             <span className="highlight-family">family</span> with.

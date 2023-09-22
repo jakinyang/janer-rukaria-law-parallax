@@ -5,13 +5,12 @@ import HamburgerMenu from "./HamburgerMenu";
 
 const NavBar: React.FC = () => {
   const navItems = [
-    // { label: 'Top Banner', id: 'topBanner' },
     { label: "About", id: "about" },
     { label: "Services", id: "services" },
     { label: "Immigration Pathways", id: "assessment" },
-    // { label: "Why?", id: "why" },
+    { label: "Why Need A Lawyer", id: "why" },
     { label: "Resources", id: "resources" },
-    { label: "Testimonials", id: "testimonials" },
+    // { label: "Testimonials", id: "testimonials" },
     { label: "Contact", id: "contactForm" },
   ];
 
@@ -29,21 +28,15 @@ const NavBar: React.FC = () => {
             <li key={item.id}>
               <a
                 href={"#" + item.id}
-                // spy={true}
-                // smooth={true}
-                // offset={-70}
-                // duration={500}
-                className="text-xl font-thin hover:opacity-70 duration-200"
+                className={`font-thin hover:opacity-70 duration-200 neobrutalist-nav ${item.label === "Contact" && "mt-8 bg-white text-[#232222] py-2 px-4 hover:bg-transparent hover:text-white hover:border-white border rounded duration-200"}`}
               >
-                <p className="neobrutalist-nav">{item.label}</p>
+                {item.label}
               </a>
             </li>
           ))}
         </ul>
       </div>
     </nav>
-    // <SectionWrapper id="nav">
-    // </SectionWrapper>
   );
 };
 

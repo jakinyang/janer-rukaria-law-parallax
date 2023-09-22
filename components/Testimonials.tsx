@@ -69,7 +69,7 @@ const Ratings: React.FC = (numOfStar) => {
 const Testimonials: React.FC = () => {
   return (
     <SectionWrapper id="testimonials">
-      <div className="pt-32 md:pt-80 md:pb-48 flex justify-center">
+      <div className="h-screen flex justify-center items-center">
         <div className="w-full lg:w-[60%]">
           <Swiper
             // install Swiper modules
@@ -81,13 +81,13 @@ const Testimonials: React.FC = () => {
             rewind={true}
             autoplay={{ delay: 4000, disableOnInteraction: false }}
             pagination={{ clickable: true }}
-            scrollbar={{ draggable: true }}
-            onSwiper={(swiper) => console.log(swiper)}
-            onSlideChange={() => console.log("slide change")}
+            // scrollbar={{ draggable: true }}
+            // onSwiper={(swiper) => console.log(swiper)}
+            // onSlideChange={() => console.log("slide change")}
           >
             <SwiperSlide>
-              <div className="bg-[#F8F8F8] bg-testimonials3 bg-contain bg-center bg-no-repeat h-[300px] rounded-xl text-gray-800">
-                <div className="flex flex-col items-center justify-center pt-10">
+              <div className="bg-[#F8F8F8] bg-testimonials3 bg-contain bg-center bg-no-repeat h-[25rem] rounded-xl text-gray-800">
+                <div className="flex flex-col items-center justify-center p-10">
                   <p className="w-[95%] md:w-[60%] md:pt-5">
                     <a className="font-semibold text-xl md:text-2xl font-serif">
                       Amazing Service!
@@ -106,8 +106,8 @@ const Testimonials: React.FC = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="bg-[#F8F8F8] bg-testimonials3 bg-contain bg-center bg-no-repeat h-[300px] rounded-xl text-gray-800">
-                <div className="flex flex-col items-center justify-center pt-10">
+              <div className="bg-[#F8F8F8] bg-testimonials3 bg-contain bg-center bg-no-repeat h-[25rem] rounded-xl text-gray-800">
+                <div className="flex flex-col items-center justify-center p-10">
                   <p className="w-[95%] md:w-[60%] md:pt-5">
                     <a className="font-semibold text-xl md:text-2xl font-serif">
                       Amazing Service!
@@ -126,8 +126,8 @@ const Testimonials: React.FC = () => {
               </div>
             </SwiperSlide>
             <SwiperSlide>
-              <div className="bg-[#F8F8F8] bg-testimonials3 bg-contain bg-center bg-no-repeat h-[300px] rounded-xl text-gray-800">
-                <div className="flex flex-col items-center justify-center pt-10">
+              <div className="bg-[#F8F8F8] bg-testimonials3 bg-contain bg-center bg-no-repeat h-[25rem] rounded-xl text-gray-800">
+                <div className="flex flex-col items-center justify-center p-10">
                   <p className="w-[95%] md:w-[60%] md:pt-5">
                     <a className="font-semibold text-xl md:text-2xl font-serif">
                       Amazing Service!

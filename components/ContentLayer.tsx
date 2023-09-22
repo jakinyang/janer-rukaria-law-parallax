@@ -19,7 +19,7 @@ export function ContentLayer() {
     //   style={{ zIndex: 1 }}
     // >
     // </ParallaxLayer>
-    <div className="flex flex-col items-center">
+    <div className="flex flex-col items-center gap-[6.5rem]">
       <TopBanner />
       <NavBar />
       <About />
