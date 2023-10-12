@@ -1,4 +1,3 @@
-import React from "react";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper";
@@ -82,9 +81,6 @@ const ImmigrationAssessment: React.FC = () => {
             navigation
             rewind={true}
             pagination={{ clickable: true }}
-            // scrollbar={{ draggable: true }}
-            // onSwiper={(swiper) => console.log(swiper)}
-            // onSlideChange={() => console.log("slide change")} 
           >
             {pathwaySwiperList}
           </Swiper>

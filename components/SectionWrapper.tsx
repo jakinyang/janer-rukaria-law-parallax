@@ -1,4 +1,4 @@
-import React, {ReactNode} from 'react';
+import React, { ReactNode } from "react";
 
 interface SectionWrapperProps {
   id?: string;
@@ -6,12 +6,13 @@ interface SectionWrapperProps {
   className?: string;
 }
 
-const SectionWrapper: React.FC<SectionWrapperProps> = ({ id, className, children }) => {
+const SectionWrapper: React.FC<SectionWrapperProps> = ({
+  id,
+  className,
+  children,
+}) => {
   return (
-    <section
-      id={id}
-      className={`p-8 w-full max-w-[1100px] ${className}`}
-    >
+    <section id={id} className={`p-8 w-full max-w-[1100px] ${className}`}>
       {children}
     </section>
   );

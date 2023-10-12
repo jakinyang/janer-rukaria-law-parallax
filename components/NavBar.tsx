@@ -1,6 +1,3 @@
-import Image from "next/image";
-import React from "react";
-import { Link } from "react-scroll";
 import HamburgerMenu from "./HamburgerMenu";
 
 const NavBar: React.FC = () => {
