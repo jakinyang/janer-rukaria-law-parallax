@@ -32,21 +32,23 @@ const ContactForm: React.FC = () => {
 
   const onSubmit = (e: any) => {
     if (form.current && isValid) {
-      // emailjs
+      setSending(true);
+      // emailjs // uncomment out from line 36-50 and replace line 38, 39, and 41 with values given from emailjs once account is created
       //   .sendForm(
-      //     "service_e5fabhw",
-      //     "template_vo3yfk6",
+      //     "service_e5fabhw", // replace me
+      //     "template_vo3yfk6", // you can edit the template of the email on emailjs and it will give a code for your custom template
       //     form.current,
-      //     "yN1HZm4kvHMP6evF6"
+      //     "yN1HZm4kvHMP6evF6" // replace me
       //   )
       //   .then((result) => {
       //     console.log(result.text);
       //     setEmailSent(true);
       //   })
       //   .catch((error) => {
+      //     setSending(false);   
       //     console.log(error.text);
       //   });
-      console.log("sending email");
+      console.log("sending email"); // line 51-57 is testing for flow, delete these lines once above is set up
       setSending(true);
       setTimeout(() => {
         setSending(false);
