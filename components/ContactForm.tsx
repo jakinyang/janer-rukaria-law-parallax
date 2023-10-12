@@ -48,7 +48,7 @@ const ContactForm: React.FC = () => {
       //     setSending(false);   
       //     console.log(error.text);
       //   });
-      console.log("sending email"); // line 51-57 is testing for flow, delete these lines once above is set up
+      console.log("sending email"); // line 51-57 is for testing flow; delete these lines once above is set up
       setSending(true);
       setTimeout(() => {
         setSending(false);
@@ -58,6 +58,7 @@ const ContactForm: React.FC = () => {
     }
   };
 
+  // see recaptcha component on line 24; a sitekey is needed and can be set up fairly easily on the google recaptcha website
   const onChange = () => {
     console.log("clicked recaptcha");
     setIsValid(!isValid);
