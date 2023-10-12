@@ -1,28 +1,19 @@
+import { useState } from 'react'
 import { FaBars } from 'react-icons/fa'
 import Drawer from 'react-modern-drawer';
 import 'react-modern-drawer/dist/index.css'
-import { useState } from 'react'
 import { Link } from 'react-scroll';
-import SectionWrapper from './SectionWrapper';
 
+import SectionWrapper from './SectionWrapper';
 
 const HamburgerMenu: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false)
-  const handleClickScroll = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({behavior: 'smooth'});
-    }
-  }
+
   const toggleDrawer = () => {
       setIsOpen((prevState) => !prevState)
   }
-  const handleClick = (id: string) => {
-    toggleDrawer();
-    handleClickScroll(id);
-  }
+
   const navItems = [
-    // { label: 'Top Banner', id: 'topBanner' },
     { label: "About", id: "about" },
     { label: "Services", id: "services" },
     { label: "Immigration Pathways", id: "assessment" },
@@ -31,7 +22,6 @@ const HamburgerMenu: React.FC = () => {
     { label: "Testimonials", id: "testimonials" },
     { label: "Contact", id: "contactForm" },
   ];
-
 
 return (
   <SectionWrapper id="hamburgerMenu" className='p-0'>
