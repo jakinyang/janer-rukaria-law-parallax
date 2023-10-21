@@ -1,4 +1,3 @@
-import React from 'react';
 import { ParallaxLayer } from '@react-spring/parallax';
 
 export const BackgroundLayer: React.FC = () => {

@@ -1,7 +1,7 @@
-import { gsap } from "gsap";
 import { useRef, useEffect } from "react";
-import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import Image from "next/image";
+import { gsap } from "gsap";
+import ScrollTrigger from "gsap/dist/ScrollTrigger";
 
 import SectionWrapper from "./SectionWrapper";
 

@@ -10,6 +10,7 @@ gsap.registerPlugin(ScrollTrigger);
 const About: React.FC = () => {
   const imageRef1 = useRef(null);
   const imageRef2 = useRef(null);
+  // create new ref to add another blob and copy lines below
 
   useEffect(() => {
     const el1 = imageRef1.current;
@@ -83,9 +84,6 @@ const About: React.FC = () => {
               highest court in Kenya.
               <br />
               <br />
-              {/* Apart from her legal work, Jane is also involved in community work
-            through providing pro-bono legal services and facilitating
-            micro-economic self-help projects in several villages in Kenya. */}
               In 2001 Jane qualified at the University of British Columbia and
               was called to the Bar of British Columbia in 2004. She has also
               opened her own law firm in Vancouver, Canada with the mission of

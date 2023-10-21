@@ -71,9 +71,6 @@ const Resources: React.FC = () => {
             navigation
             rewind={true}
             pagination={{ clickable: true }}
-            // scrollbar={{ draggable: true }}
-            // onSwiper={(swiper) => console.log(swiper)}
-            // onSlideChange={() => console.log("slide change")}
           >
             {resourceSwiperList}
           </Swiper>

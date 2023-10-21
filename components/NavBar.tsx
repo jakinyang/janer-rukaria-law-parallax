@@ -1,6 +1,3 @@
-import Image from "next/image";
-import React from "react";
-import { Link } from "react-scroll";
 import HamburgerMenu from "./HamburgerMenu";
 
 const NavBar: React.FC = () => {
@@ -18,7 +15,7 @@ const NavBar: React.FC = () => {
     <nav className="fixed top-0 left-0 w-full bg-[#232222] py-4 px-8 bg-opacity-90 z-10">
       <div className="flex justify-between items-center">
         <a href="#top">
-          <img src="/images-new/jane_rukaria_logo_white.svg" alt="logo" className="w-[105px]" />
+          <img src="/images-new/jane_rukaria_logo_white.svg" alt="logo" className="w-[90px]" />
         </a>
         <div className="lg:hidden z-100">
           <HamburgerMenu />
