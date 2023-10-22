@@ -6,21 +6,39 @@ export const immigration = [
     link: "https://www.canada.ca/en/immigration-refugees-citizenship/services/refugees.html"
   },
   {
+    name: "Skilled Worker",
+    description: "This class of immigrants are allowed to come to Canada because they have sufficient education, work experience, knowledge of English and/or French and other abilities that will help them to establish themselves successfully in Canada.",
+    icon: "/images-new/skilled-worker.png",
+    link: "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/federal-skilled-workers.html"
+  },
+  {
+    name: "Canadian Experience Class",
+    description: "If you are a temporary foreign worker or a foreign student who graduated in Canada, you often have the qualities to make a successful transition from temporary to permanent residence. You are familiar with Canadian society and can contribute to the Canadian economy. You should have knowledge of English or French and qualifying work experience.",
+    icon: "/images-new/skilled-worker.png",
+    link: "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/canadian-experience-class.html"
+  },
+  {
+    name: "Provincial Nominee",
+    description: "Persons who immigrate to Canada under the Provincial Nominee Program have the skills, education and work experience needed to make an immediate economic contribution to the province or territory that nominates them. They are ready to establish themselves successfully as permanent residents in Canada. To apply under the Provincial Nominee Program, applicants must be nominated by a Canadian province or territory.",
+    icon: "/images-new/skilled-worker.png",
+    link: "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees.html"
+  },
+  {
+    name: "Business Immigration",
+    description: "Persons who immigrate to Canada under the Provincial Nominee Program have the skills, education and work experience needed to make an immediate economic contribution to the province or territory that nominates them. They are ready to establish themselves successfully as permanent residents in Canada. To apply under the Provincial Nominee Program, applicants must be nominated by a Canadian province or territory.",
+    icon: "/images-new/skilled-worker.png",
+    link: "hhttps://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees.html"
+  },
+  {
     name: "Family Sponsorship",
     description: "Canadian citizens and permanent residents may sponsor close relatives or family members who want to become permanent residents of Canada. Sponsors must promise to support the relative or family member and their accompanying family members for a period of three to 10 years to help them settle in Canada.",
     icon: "/images-new/family-sponsorship.png",
     link: "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/family-sponsorship.html"
   },
   {
-    name: "Skilled Worker",
-    description: "This class of immigrants are allowed to come to Canada because they have sufficient education, work experience, knowledge of English and/or French and other abilities that will help them to establish themselves successfully in Canada.",
-    icon: "/images-new/skilled-worker.png",
-    link: "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry.html"
-  },
-  {
-    name: "Temporary Visas",
-    description: "Temporary Visas (student, visitor) / Work permits / Skilled worker / Investor / Entrepreneur / Family sponsorship / International adoption / Provincial nominee",
+    name: "Humanitarian Cases",
+    description: "there are circumstances where people may be allowed to immigrate to Canada for &quot;humanitarian and compassionate considerations.&quot;",
     icon: "/images-new/temporary-visas.png",
-    link: "https://www.canada.ca/en/immigration-refugees-citizenship/services/visit-canada.html" // replace link this is filler
+    link: "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/application-forms-guides/humanitarian-compassionate-considerations.html"
   }
 ];

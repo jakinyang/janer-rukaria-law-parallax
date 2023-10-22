@@ -46,32 +46,29 @@ const Why: React.FC = () => {
       <div className="flex gap-20 w-full pt-[83px] justify-center items-center relative">
         <div className="flex-col">
           <h2 className="brutalist-title text-3xl md:text-4xl max-w-lg mb-8 font-serif font-semibold">
-            Why would I need a <span className="text-[#43A329]">lawyer</span> to handle my immigration matter?
+            Why would I need a <span className="text-[#E6770F]">lawyer</span> to handle my immigration matter?
           </h2>
           <div>
             <p className="brutalist-title md:text-xl max-w-2xl">
-              Maybe you’ve asked yourself this question because you know the
-              Citizenship and Immigration Canada website has all the application
-              forms, kits, manuals and guides that you may need.
+              Maybe you've asked yourself this question because you know that the Citizenship and Immigration Canada website has all the application forms, kits, manuals and guides you need. Or maybe you know someone who has done it themselves.
               <br />
               <br />
-              Consider the fact that immigration is something that is truly
-              life-changing; the stakes are high and the consequences of failure
-              are far-reaching and costly. You and your family’s future are at
-              stake.
+              Remember that immigration is a truly life-changing process - the stakes are high and the consequences of failure are far-reaching and costly. The future of you and your family is at stake.
               <br />
               <br />
-              You need a dedicated lawyer to find the expertise to recognize and
-              deal with the complex situations or problems that arise.
+              We have over 20 years of experience representing clients with their immigration needs to Canada. We have successfully represented clients before the Federal Court and the Immigration and Refugee Board of Canada.
               <br />
               <br />
-              You need a lawyer who knows the most up-to-date immigration law
-              and procedures. One who will give you candid advice, who can
-              relate to the complex issues raised by culture, language, gender
-              and race and who is sensitive to them.
+              Gain peace of mind during your immigration process, avoid problems before they arise, and get real solutions when they do.
               <br />
               <br />
-              One you can trust your family’s future with.
+              You need a dedicated attorney working on your behalf, an experienced professional who will go above and beyond what the website says and what your friend or family can suggest. Unless you work with a law firm that understands Canadian immigration law, you are unlikely to find the expertise to recognize and deal with the complex situations or problems that arise during the course of your immigration process.
+              <br />
+              <br />
+              You need a lawyer who knows the latest immigration laws and procedures. One who will give you candid advice, one who understands and is sensitive to the complex issues raised by culture, language, gender and race. One you can trust with your future and the future of your family.
+              <br />
+              <br />
+              Talk to us about the main ways to immigrate to Canada to get a better perspective on your unique situation.
             </p>
           </div>
           <div className="mt-12">

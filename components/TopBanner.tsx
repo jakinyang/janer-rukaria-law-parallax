@@ -47,10 +47,10 @@ const TopBanner: React.FC = () => {
         <div className="text-center md:text-left md:pt-0">
           <h1 className="text-5xl md:text-7xl font-medium neobrutalist-title w-[12ch] md:w-[11ch] mb-6">
             One you can <span className="highlight-trust">trust</span> your{" "}
-            <span className="highlight-family">family</span> with.
+            <span className="highlight-family">legal affairs</span> with.
           </h1>
           <span className="font-light text-xl">
-            Jane Rukaria, Immigration Lawyer
+            Jane Rukaria, Barrister & Solicitor
           </span>
         </div>
 

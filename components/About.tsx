@@ -41,7 +41,7 @@ const About: React.FC = () => {
       duration: 3
     })
   }, [])
-  
+
   return (
     <SectionWrapper id="about">
       <div className="flex w-full md:pt-[6.5rem] justify-center items-center">
@@ -60,7 +60,7 @@ const About: React.FC = () => {
             height={200}
             className="hidden lg:block absolute top-0 m-auto -z-20"
             ref={imageRef2}
-            />
+          />
           <Image
             src={"/images/red-4.svg"}
             alt="Profile Picture"
@@ -76,22 +76,17 @@ const About: React.FC = () => {
           </h2>
           <div className="">
             <p className="brutalist-title lg:text-xl max-w-2xl lg:pl-10">
-              Jane was born and raised in Kenya. She studied law at the
-              University of Nairobi and the Kenya School of Law and was called
-              to the Bar of Kenya in 1992. After completion of her studies in
-              Kenya, Jane gained valuable experience in civil litigation and has
-              successfully argued cases in several areas of law up to the
-              highest court in Kenya.
+              I was born in a small village in Meru County on the slopes of Mount Kenya in Kenya. I studied law at the University of Nairobi and the Kenya School of Law and was called to the Kenyan Bar in 1992. After completing my studies in Kenya, I worked as a Junior Counsel for one year before opening my own general practice in Mombasa, Kenya in 1995. I have gained valuable experience in civil litigation and have successfully argued cases in various areas of law up to the Supreme Court of Kenya. In addition to my legal practice, I am also involved in community work, providing pro bono legal services in Canada and facilitating education for needy children in several villages in Kenya.
               <br />
               <br />
-              In 2001 Jane qualified at the University of British Columbia and
-              was called to the Bar of British Columbia in 2004. She has also
-              opened her own law firm in Vancouver, Canada with the mission of
-              helping people from overseas to come to Canada to live, work,
-              study or immigrate. As a new Canadian immigrant from Africa, she
-              possesses a deep understanding of multicultural issues and the
-              challenges facing immigrants to Canada, which she tries to put to
-              good use in serving her clients and community.
+              I graduated from the University of British Columbia in 2001 and was called to the Bar of British Columbia in 2004. I opened my law practice in Vancouver, Canada, with a mission to help people from all walks of life gain access to the legal system.
+              <br />
+              <br />
+              The cost of legal services continues to be an obstacle to people receiving proper legal advice. To that end, I charge fixed fees in all my cases, with very few exceptions where the legal issues are complex.
+              <br />
+              <br />
+              As an immigrant from Africa, I feel I have a deep understanding of multicultural issues and the challenges faced by immigrants and Canadians alike in Canada, which I try to put to good use in serving my clients and the community.
+
             </p>
           </div>
           <div className="lg:pl-10 mt-8">

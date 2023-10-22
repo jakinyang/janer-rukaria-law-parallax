@@ -12,9 +12,9 @@ export const resources = [
     link: "https://www2.gov.bc.ca/gov/content/governments/organizational-structure/ministries-organizations/ministries/post-secondary-education-and-future-skills"
   },
   {
-    name: "This is the third link",
-    description: "To be provided at some point lol",
+    name: "Comprehensive Ranking System (CRS) tool: skilled immigrants (Express Entry) ",
+    description: "This tool will help you calculate your Comprehensive Ranking System (CRS) score based on the answers you provide The CRS is a points-based system that is used to assess and score your profile and rank it in the Express Entry pool. Please note that for accurate results, you will need an assessment of your Education credentials if obtained outside Canada and language skills.",
     image: "/images-new/canada.png",
-    link: ""
+    link: "https://www.cic.gc.ca/english/immigrate/skilled/crs-tool.asp"
   },
 ]

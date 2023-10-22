@@ -5,9 +5,9 @@ const NavBar: React.FC = () => {
     { label: "About", id: "about" },
     { label: "Services", id: "services" },
     { label: "Immigration Pathways", id: "assessment" },
-    { label: "Why Need A Lawyer", id: "why" },
+    { label: "Why Do I Need A Lawyer", id: "why" },
     { label: "Resources", id: "resources" },
-    // { label: "Testimonials", id: "testimonials" },
+    { label: "Testimonials", id: "testimonials" },
     { label: "Contact", id: "contactForm" },
   ];
 

@@ -8,6 +8,14 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import SectionWrapper from "./SectionWrapper";
+import { testimonials } from "@/data/testimonials";
+
+interface Testimonial {
+  name: string;
+  testimonial: string;
+  date: string;
+  link: string;
+}
 
 const Ratings: React.FC = (numOfStar) => {
   return (
@@ -54,7 +62,7 @@ const Ratings: React.FC = (numOfStar) => {
       </svg>
       <svg
         aria-hidden="true"
-        className="w-5 h-5 text-gray-300 dark:text-gray-500"
+        className="w-5 h-5 text-yellow-400"
         fill="currentColor"
         viewBox="0 0 20 20"
         xmlns="http://www.w3.org/2000/svg"
@@ -66,11 +74,35 @@ const Ratings: React.FC = (numOfStar) => {
   );
 };
 
+const testimonialComponents = testimonials.map((testimonial: Testimonial) => {
+  return (
+    <SwiperSlide>
+      <div className="bg-[#F8F8F8] bg-testimonials3 bg-contain bg-center bg-no-repeat h-[25rem] rounded-xl text-gray-800">
+        <div className="flex flex-col items-center justify-center p-10">
+          <p className="w-[95%] md:w-[60%] md:pt-5">
+            <a href={testimonial.link} target="_blank" className="font-semibold text-xl md:text-2xl font-serif">
+              {/* First two words */}
+              {testimonial.testimonial.split(" ").slice(0, 2).join(" ")}
+            </a>{" "}
+            {/* The rest of the words */}
+            {testimonial.testimonial.split(" ").slice(2).join(" ")}
+          </p>
+          <div className="w-[95%] md:w-[60%] flex flex-col items-start pt-3 md:pt-5">
+            <Ratings />
+            <h2 className="md:text-xl">{testimonial.name}</h2>
+            <h3 className="md:pb-5">{testimonial.date}</h3>
+          </div>
+        </div>
+      </div>
+    </SwiperSlide>
+  );
+});
+
 const Testimonials: React.FC = () => {
   return (
     <SectionWrapper id="testimonials">
       <div className="h-screen flex justify-center items-center">
-        <div className="w-full lg:w-[60%]">
+        <div className="w-full lg:w-[80%]">
           <Swiper
             // install Swiper modules
             modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
@@ -81,70 +113,11 @@ const Testimonials: React.FC = () => {
             rewind={true}
             autoplay={{ delay: 4000, disableOnInteraction: false }}
             pagination={{ clickable: true }}
-            // scrollbar={{ draggable: true }}
-            // onSwiper={(swiper) => console.log(swiper)}
-            // onSlideChange={() => console.log("slide change")}
+          // scrollbar={{ draggable: true }}
+          // onSwiper={(swiper) => console.log(swiper)}
+          // onSlideChange={() => console.log("slide change")}
           >
-            <SwiperSlide>
-              <div className="bg-[#F8F8F8] bg-testimonials3 bg-contain bg-center bg-no-repeat h-[25rem] rounded-xl text-gray-800">
-                <div className="flex flex-col items-center justify-center p-10">
-                  <p className="w-[95%] md:w-[60%] md:pt-5">
-                    <a className="font-semibold text-xl md:text-2xl font-serif">
-                      Amazing Service!
-                    </a>{" "}
-                    Im baby church-key schlitz paleo slow-carb shoreditch, pabst
-                    crucifix fixie solarpunk fam. Bruh brunch tofu raw denim
-                    scenester keffiyeh kitsch gentrify shoreditch before they
-                    sold out bicycle rights knausgaard pug shabby chic venmo.
-                  </p>
-                  <div className="w-[95%] md:w-[60%] flex flex-col items-start pt-3 md:pt-5">
-                    <Ratings />
-                    <h2 className="md:text-xl">Jackson Powers</h2>
-                    <h3 className="md:pb-5">Enterpreneur</h3>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="bg-[#F8F8F8] bg-testimonials3 bg-contain bg-center bg-no-repeat h-[25rem] rounded-xl text-gray-800">
-                <div className="flex flex-col items-center justify-center p-10">
-                  <p className="w-[95%] md:w-[60%] md:pt-5">
-                    <a className="font-semibold text-xl md:text-2xl font-serif">
-                      Amazing Service!
-                    </a>{" "}
-                    Im baby church-key schlitz paleo slow-carb shoreditch, pabst
-                    crucifix fixie solarpunk fam. Bruh brunch tofu raw denim
-                    scenester keffiyeh kitsch gentrify shoreditch before they
-                    sold out bicycle rights knausgaard pug shabby chic venmo.
-                  </p>
-                  <div className="w-[95%] md:w-[60%] flex flex-col items-start pt-3 md:pt-5">
-                    <Ratings />
-                    <h2 className="md:text-xl">Jackson Powers</h2>
-                    <h3 className="md:pb-5">Enterpreneur</h3>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
-            <SwiperSlide>
-              <div className="bg-[#F8F8F8] bg-testimonials3 bg-contain bg-center bg-no-repeat h-[25rem] rounded-xl text-gray-800">
-                <div className="flex flex-col items-center justify-center p-10">
-                  <p className="w-[95%] md:w-[60%] md:pt-5">
-                    <a className="font-semibold text-xl md:text-2xl font-serif">
-                      Amazing Service!
-                    </a>{" "}
-                    Im baby church-key schlitz paleo slow-carb shoreditch, pabst
-                    crucifix fixie solarpunk fam. Bruh brunch tofu raw denim
-                    scenester keffiyeh kitsch gentrify shoreditch before they
-                    sold out bicycle rights knausgaard pug shabby chic venmo.
-                  </p>
-                  <div className="w-[95%] md:w-[60%] flex flex-col items-start pt-3 md:pt-5">
-                    <Ratings />
-                    <h2 className="md:text-xl">Jackson Powers</h2>
-                    <h3 className="md:pb-5">Enterpreneur</h3>
-                  </div>
-                </div>
-              </div>
-            </SwiperSlide>
+            {testimonialComponents}
           </Swiper>
         </div>
       </div>
