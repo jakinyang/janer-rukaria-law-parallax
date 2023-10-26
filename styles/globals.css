@@ -107,7 +107,7 @@ img.resourceImg {
   height: 1.5rem;
   background-color: #B34A22;
   position: absolute;
-  transform: translate(-14.25rem, -0.5rem);
+  transform: translate(-17rem, -0.5rem);
   z-index: -1;
   bottom: 0;
   left: 0;
@@ -123,7 +123,7 @@ img.resourceImg {
   height: 1.5rem;
   background-color: #B34A22;
   position: absolute;
-  transform: translate(-14.25rem, -0.5rem);
+  transform: translate(-11.5rem, -0.5rem);
   z-index: -1;
   bottom: 0;
   left: 0;
@@ -138,7 +138,7 @@ img.resourceImg {
 
   .highlight-family::before {
     transform: translate(-19.1rem, -0.5rem);
-    width: 13rem;
+    width: 9.75rem;
     height: 2.5rem;
   }
 }

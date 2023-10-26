@@ -14,19 +14,19 @@ export const immigration = [
   {
     name: "Canadian Experience Class",
     description: "If you are a temporary foreign worker or a foreign student who graduated in Canada, you often have the qualities to make a successful transition from temporary to permanent residence. You are familiar with Canadian society and can contribute to the Canadian economy. You should have knowledge of English or French and qualifying work experience.",
-    icon: "/images-new/skilled-worker.png",
+    icon: "/images-new/canadian-experience.png",
     link: "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/eligibility/canadian-experience-class.html"
   },
   {
     name: "Provincial Nominee",
     description: "Persons who immigrate to Canada under the Provincial Nominee Program have the skills, education and work experience needed to make an immediate economic contribution to the province or territory that nominates them. They are ready to establish themselves successfully as permanent residents in Canada. To apply under the Provincial Nominee Program, applicants must be nominated by a Canadian province or territory.",
-    icon: "/images-new/skilled-worker.png",
+    icon: "/images-new/provincial-nominee.png",
     link: "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees.html"
   },
   {
     name: "Business Immigration",
     description: "Persons who immigrate to Canada under the Provincial Nominee Program have the skills, education and work experience needed to make an immediate economic contribution to the province or territory that nominates them. They are ready to establish themselves successfully as permanent residents in Canada. To apply under the Provincial Nominee Program, applicants must be nominated by a Canadian province or territory.",
-    icon: "/images-new/skilled-worker.png",
+    icon: "/images-new/temporary-visas.png",
     link: "hhttps://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees.html"
   },
   {
@@ -38,7 +38,7 @@ export const immigration = [
   {
     name: "Humanitarian Cases",
     description: "there are circumstances where people may be allowed to immigrate to Canada for &quot;humanitarian and compassionate considerations.&quot;",
-    icon: "/images-new/temporary-visas.png",
+    icon: "/images-new/humanitarian.png",
     link: "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/application-forms-guides/humanitarian-compassionate-considerations.html"
   }
 ];

@@ -30,7 +30,7 @@ const PathwayCard: React.FC<PathwayProps> = ({ pathway }) => {
         >
           <div className="flex items-center gap-4">
             <h3 className="text-xl font-semibold">{pathway.name}</h3>
-            <img src={pathway.icon} alt="" />
+            <img src={pathway.icon} className="w-[37px]" alt="" />
           </div>
           <p>{pathway.description}</p>
         </Link>
