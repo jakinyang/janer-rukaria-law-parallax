@@ -43,7 +43,7 @@ const Why: React.FC = () => {
 
   return (
     <SectionWrapper id="why">
-      <div className="flex gap-20 w-full pt-[83px] justify-center items-center relative">
+      <div className="flex gap-20 w-full pt-[2rem] md:pt-[6rem] justify-center items-center relative">
         <div className="flex-col">
           <h2 className="brutalist-title text-3xl md:text-4xl max-w-lg mb-8 font-serif font-semibold">
             Why would I need a <span className="text-[#E6770F]">lawyer</span> to handle my immigration matter?

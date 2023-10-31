@@ -37,7 +37,7 @@ export const immigration = [
   },
   {
     name: "Humanitarian Cases",
-    description: "there are circumstances where people may be allowed to immigrate to Canada for &quot;humanitarian and compassionate considerations.&quot;",
+    description: 'There are circumstances where people may be allowed to immigrate to Canada for "humanitarian and compassionate considerations".',
     icon: "/images/humanitarian.png",
     link: "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/application-forms-guides/humanitarian-compassionate-considerations.html"
   }

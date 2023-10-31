@@ -42,7 +42,7 @@ const Services: React.FC = () => {
 
   return (
     <SectionWrapper id="services">
-      <div className="flex flex-col pt-[6.5rem] items-center">
+      <div className="flex flex-col pt-[2rem] md:pt-[6rem] items-center">
         <div className="flex flex-col justify-between md:flex-row gap-10">
           <div className="lg:w-[30%]">
             <h2 className="font-serif font-semibold text-3xl md:text-5xl">

@@ -66,7 +66,7 @@ const ContactForm: React.FC = () => {
 
   return (
     <SectionWrapper id="contactForm">
-      <div className="container mx-auto my-4 pt-[6.5rem]">
+      <div className="container mx-auto my-4 md:pt-[6.5rem] duration-200">
         <h2 className="font-serif font-semibold text-3xl mb-5 md:text-5xl">
           Send us a message
         </h2>

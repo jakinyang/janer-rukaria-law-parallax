@@ -55,7 +55,7 @@ const ImmigrationAssessment: React.FC = () => {
 
   return (
     <SectionWrapper id="assessment">
-      <div className="flex flex-col w-full pt-[6.5rem] items-center">
+      <div className="flex flex-col w-full pt-[2rem] md:pt-[6rem] items-center">
         <h2 className="font-serif font-semibold text-3xl text-center md:text-5xl">
           Immigration Pathways
         </h2>

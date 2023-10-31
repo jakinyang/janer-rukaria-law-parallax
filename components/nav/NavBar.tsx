@@ -15,7 +15,7 @@ const NavBar: React.FC = () => {
     <nav className="fixed top-0 left-0 w-full bg-[#232222] py-4 px-8 bg-opacity-90 z-10">
       <div className="flex justify-between items-center">
         <a href="#top">
-          <img src="/images/jane_rukaria_logo_white.svg" alt="logo" className="w-[90px] mr-[2rem]" />
+          <img src="/images/jane_rukaria_logo_white.svg" alt="logo" className="w-[80px] mr-[2rem]" />
         </a>
         <div className="lg:hidden z-100">
           <HamburgerMenu />
