@@ -122,7 +122,7 @@ const ContactForm: React.FC = () => {
                       className="uppercase text-sm font-bold tracking-wide bg-blue-900 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline disabled:opacity-70 hover:brightness-75 flex items-center justify-center gap-4"
                     >
                       {sending ? "Sending" : "Send Message"}
-                      {sending && <Image src="/images-new/loading.png" alt="" width={20} height={20} className="spin" />}
+                      {sending && <Image src="/images/loading.png" alt="" width={20} height={20} className="spin" />}
                     </button>
                   </Form>
                 );
