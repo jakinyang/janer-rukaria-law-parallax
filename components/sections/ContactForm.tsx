@@ -46,10 +46,10 @@ const ContactForm: React.FC = () => {
       try {
         await emailjs // uncomment out from line 36-50 and replace line 38, 39, and 41 with values given from emailjs once account is created
           .send(
-            process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE || "", // Jane's service: "service_s4x21cm", // Service Key
-            process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE || "", // Template Name
+            "service_8nhb0wj", // Client's service: "service_s4x21cm", // Service Key
+            "contact_form_01", // Template Name
             params, // Form Ref
-            process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_KEY || "hbVdfbbxbpRrWKaj_" // Key of Account
+            "SdxDr4OEdOaAfkyfh" // Key of Account
           )
         setEmailSent(true);
       } catch (error) {
@@ -124,7 +124,7 @@ const ContactForm: React.FC = () => {
                     <div className="flex justify-center">
                       <ReCAPTCHA
                         ref={recaptchaRef}
-                        sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || "6LeuEikpAAAAAMnqQD1XFgxuOCQDN52KDtqWTffP"}
+                        sitekey={"6LeuEikpAAAAAMnqQD1XFgxuOCQDN52KDtqWTffP"}
                         onChange={onChange}
                       />
                     </div>
