@@ -46,10 +46,10 @@ const ContactForm: React.FC = () => {
       try {
         await emailjs // uncomment out from line 36-50 and replace line 38, 39, and 41 with values given from emailjs once account is created
           .send(
-            "t4p-N7lxD4OQPriCc", // Service Key
+            process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE || "service_s4x21cm", // Service Key
             process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE || "contact_form_01", // Template Name
             params,
-            process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_KEY || "WwlfjZHSUcbuISbLo" // Public Key
+            process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_KEY || "t4p-N7lxD4OQPriCc" // Public Key
           )
         setEmailSent(true);
       } catch (error) {
