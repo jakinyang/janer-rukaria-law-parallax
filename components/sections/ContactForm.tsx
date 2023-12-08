@@ -34,12 +34,16 @@ const ContactForm: React.FC = () => {
   const form = useRef<HTMLFormElement>(null);
 
   const onSubmit = async (e: any) => {
+    e.preventDefault(); // Prevent default form submission
     if (form.current && isValid) {
-      setSending(true);
-      const params = {
-        ...form.current,
-        "g-recaptcha-response": captchaValue, // Access getValue method on recaptchaRef.current
-      }
+        setSending(true);
+        const formData = new FormData(form.current);
+        const formValues = Object.fromEntries(formData.entries());
+        const params = {
+            ...formValues,
+            "g-recaptcha-response": captchaValue,
+        }
+
       try {
         await emailjs // uncomment out from line 36-50 and replace line 38, 39, and 41 with values given from emailjs once account is created
           .send(
