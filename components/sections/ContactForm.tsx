@@ -49,7 +49,7 @@ const ContactForm: React.FC = () => {
             process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE || "", // Jane's service: "service_s4x21cm", // Service Key
             process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE || "", // Template Name
             params, // Form Ref
-            process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_KEY || "", // Key of Account
+            process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_KEY || "hbVdfbbxbpRrWKaj_" // Key of Account
           )
         setEmailSent(true);
       } catch (error) {
@@ -61,8 +61,8 @@ const ContactForm: React.FC = () => {
 
   // see recaptcha component on line 24; a sitekey is needed and can be set up fairly easily on the google recaptcha website
   const onChange = (captchaValue: any) => {
-    setCaptchaValue(captchaValue)
-    setIsValid(!isValid);
+    setCaptchaValue(captchaValue);
+    setIsValid(true);
   };
 
   return (
