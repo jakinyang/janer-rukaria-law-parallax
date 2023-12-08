@@ -12,6 +12,8 @@ const ContactForm: React.FC = () => {
   const [sending, setSending] = useState(false);
   const [emailSent, setEmailSent] = useState(false);
 
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
+
   const initialValues = {
     firstName: "",
     lastName: "",
@@ -33,13 +35,18 @@ const ContactForm: React.FC = () => {
   const onSubmit = async (e: any) => {
     if (form.current && isValid) {
       setSending(true);
+
+      const params = {
+        ...form.current,
+        "g-recaptcha-response": recaptchaRef?.current?.getValue(), // Access getValue method on recaptchaRef.current
+      }
       try {
         const result = await emailjs // uncomment out from line 36-50 and replace line 38, 39, and 41 with values given from emailjs once account is created
           .sendForm(
             "service_8nhb0wj", // Jane's service: "service_s4x21cm", // Service Key
             "contact_form_01", // Template Name
-            form.current,
-            "hbVdfbbxbpRrWKaj_" // Public Key of Account
+            params, // Form Ref
+            "hbVdfbbxbpRrWKaj_", // Public Key of Account
           )
         setEmailSent(true);
       } catch (error) {
@@ -112,6 +119,7 @@ const ContactForm: React.FC = () => {
                     />
                     <div className="flex justify-center">
                       <ReCAPTCHA
+                        ref={recaptchaRef}
                         sitekey="6LeuEikpAAAAAMnqQD1XFgxuOCQDN52KDtqWTffP"
                         onChange={onChange}
                       />
