@@ -1,15 +1,15 @@
-import TopBanner from "./TopBanner";
+import TopBanner from "./sections/TopBanner";
 
-import NavBar from "./NavBar";
-import About from "./About";
-import Services from "./Services";
-import ImmigrationAssessment from "./ImmigrationPathways";
-import Why from "./Why";
-import Resources from "./Resources";
-import Testimonials from "./Testimonials";
-import ContactForm from "./ContactForm";
+import NavBar from "./nav/NavBar";
+import About from "./sections/About";
+import Services from "./sections/Services";
+import ImmigrationAssessment from "./sections/ImmigrationPathways";
+import Why from "./sections/Why";
+import Resources from "./sections/Resources";
+import Testimonials from "./sections/Testimonials";
+import ContactForm from "./sections/ContactForm";
 
-import Footer from "./Footer";
+import Footer from "./sections/Footer";
 
 export function ContentLayer() {
   return (
