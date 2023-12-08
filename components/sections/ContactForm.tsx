@@ -12,7 +12,7 @@ const ContactForm: React.FC = () => {
   const [sending, setSending] = useState(false);
   const [emailSent, setEmailSent] = useState(false);
 
-  const recaptchaRef = useRef<ReCAPTCHA>(null);
+  const recaptchaRef = useRef<any>(null);
 
   const initialValues = {
     firstName: "",
