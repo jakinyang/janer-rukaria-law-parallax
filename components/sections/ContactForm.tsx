@@ -49,7 +49,7 @@ const ContactForm: React.FC = () => {
             process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE || "service_s4x21cm", // Service Key
             process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE || "contact_form_01", // Template Name
             params,
-            process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_KEY || "SdxDr4OEdOaAfkyfh" // Public Key
+            process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_KEY || "WwlfjZHSUcbuISbLo" // Public Key
           )
         setEmailSent(true);
       } catch (error) {
