@@ -33,8 +33,7 @@ const ContactForm: React.FC = () => {
 
   const form = useRef<HTMLFormElement>(null);
 
-  const onSubmit = async (e: any) => {
-    e.preventDefault(); // Prevent default form submission
+  const onSubmit = async () => {
     if (form.current && isValid) {
         setSending(true);
         const formData = new FormData(form.current);
