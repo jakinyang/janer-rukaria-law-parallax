@@ -30,23 +30,22 @@ const ContactForm: React.FC = () => {
 
   const form = useRef<HTMLFormElement>(null);
 
-  const onSubmit = (e: any) => {
+  const onSubmit = async (e: any) => {
     if (form.current && isValid) {
       setSending(true);
-      emailjs // uncomment out from line 36-50 and replace line 38, 39, and 41 with values given from emailjs once account is created
-        .sendForm(
-          "service_s4x21cm", // Service Key
-          "contact_form_01", // Template Name
-          form.current,
-          "hbVdfbbxbpRrWKaj_" // Public Key of Account
-        )
-        .then((result) => {
-          setEmailSent(true);
-        })
-        .catch((error) => {
-          setSending(false);
-          console.log(error.text);
-        });
+      try {
+        const result = await emailjs // uncomment out from line 36-50 and replace line 38, 39, and 41 with values given from emailjs once account is created
+          .sendForm(
+            "service_8nhb0wj", // Jane's service: "service_s4x21cm", // Service Key
+            "contact_form_01", // Template Name
+            form.current,
+            "hbVdfbbxbpRrWKaj_" // Public Key of Account
+          )
+        setEmailSent(true);
+      } catch (error) {
+        setSending(false);
+        console.log(error);
+      }
     }
   };
 
