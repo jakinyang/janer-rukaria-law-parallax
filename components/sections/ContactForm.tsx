@@ -119,7 +119,7 @@ const ContactForm: React.FC = () => {
                     <div className="flex justify-center">
                       <ReCAPTCHA
                         ref={recaptchaRef}
-                        sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || ""}
+                        sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY || "6LeuEikpAAAAAMnqQD1XFgxuOCQDN52KDtqWTffP"}
                         onChange={onChange}
                       />
                     </div>
