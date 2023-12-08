@@ -35,21 +35,21 @@ const ContactForm: React.FC = () => {
 
   const onSubmit = async () => {
     if (form.current && isValid) {
-        setSending(true);
-        const formData = new FormData(form.current);
-        const formValues = Object.fromEntries(formData.entries());
-        const params = {
-            ...formValues,
-            "g-recaptcha-response": captchaValue,
-        }
+      setSending(true);
+      const formData = new FormData(form.current);
+      const formValues = Object.fromEntries(formData.entries());
+      const params = {
+        ...formValues,
+        "g-recaptcha-response": captchaValue,
+      }
 
       try {
         await emailjs // uncomment out from line 36-50 and replace line 38, 39, and 41 with values given from emailjs once account is created
           .send(
-            "service_8nhb0wj", // Client's service: "service_s4x21cm", // Service Key
-            "contact_form_01", // Template Name
-            params, // Form Ref
-            "SdxDr4OEdOaAfkyfh" // Key of Account
+            process.env.NEXT_PUBLIC_EMAIL_JS_SERVICE || "service_s4x21cm", // Service Key
+            process.env.NEXT_PUBLIC_EMAIL_JS_TEMPLATE || "contact_form_01", // Template Name
+            params,
+            process.env.NEXT_PUBLIC_EMAIL_JS_PUBLIC_KEY || "SdxDr4OEdOaAfkyfh" // Public Key
           )
         setEmailSent(true);
       } catch (error) {
