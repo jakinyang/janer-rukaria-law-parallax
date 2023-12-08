@@ -35,32 +35,23 @@ const ContactForm: React.FC = () => {
       setSending(true);
       emailjs // uncomment out from line 36-50 and replace line 38, 39, and 41 with values given from emailjs once account is created
         .sendForm(
-          "service_e5fabhw", // replace me
-          "template_vo3yfk6", // you can edit the template of the email on emailjs and it will give a code for your custom template
+          "service_s4x21cm", // Service Key
+          "contact_form_01", // Template Name
           form.current,
-          "yN1HZm4kvHMP6evF6" // replace me
+          "hbVdfbbxbpRrWKaj_" // Public Key of Account
         )
         .then((result) => {
-          console.log(result.text);
           setEmailSent(true);
         })
         .catch((error) => {
-          setSending(false);   
+          setSending(false);
           console.log(error.text);
         });
-      // console.log("sending email"); // line 51-57 is for testing flow; delete these lines once above is set up
-      // setSending(true);
-      // setTimeout(() => {
-      //   setSending(false);
-      //   setEmailSent(true);
-      //   console.log("email sent")
-      // }, 2000)
     }
   };
 
   // see recaptcha component on line 24; a sitekey is needed and can be set up fairly easily on the google recaptcha website
   const onChange = () => {
-    console.log("clicked recaptcha");
     setIsValid(!isValid);
   };
 
