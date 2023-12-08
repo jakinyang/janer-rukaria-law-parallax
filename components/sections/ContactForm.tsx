@@ -11,6 +11,7 @@ const ContactForm: React.FC = () => {
   const [isValid, setIsValid] = useState(false);
   const [sending, setSending] = useState(false);
   const [emailSent, setEmailSent] = useState(false);
+  const [captchaValue, setCaptchaValue] = useState(null);
 
   const recaptchaRef = useRef<any>(null);
 
@@ -37,7 +38,7 @@ const ContactForm: React.FC = () => {
       setSending(true);
       const params = {
         ...form.current,
-        "g-recaptcha-response": recaptchaRef?.current?.getValue(), // Access getValue method on recaptchaRef.current
+        "g-recaptcha-response": captchaValue, // Access getValue method on recaptchaRef.current
       }
       try {
         await emailjs // uncomment out from line 36-50 and replace line 38, 39, and 41 with values given from emailjs once account is created
@@ -56,7 +57,8 @@ const ContactForm: React.FC = () => {
   };
 
   // see recaptcha component on line 24; a sitekey is needed and can be set up fairly easily on the google recaptcha website
-  const onChange = () => {
+  const onChange = (captchaValue: any) => {
+    setCaptchaValue(captchaValue)
     setIsValid(!isValid);
   };
 
