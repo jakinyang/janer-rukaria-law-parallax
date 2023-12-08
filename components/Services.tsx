@@ -20,7 +20,7 @@ const Services: React.FC = () => {
           style={{ maxHeight: '1.5em' }}
         >
           <p className="font-novatest truncate">
-            {service.description}
+            {service.description?.[1] || service.description?.[0]}
           </p>
         </div>
         <div
