@@ -148,11 +148,11 @@ const ContactForm: React.FC = () => {
             </div>
           )}
 
-          <div className="px-8 py-12 bg-blue-900 rounded-2xl col-span-3 lg:col-span-2">
+          <div className="px-8 py-4 bg-blue-900 rounded-2xl col-span-3 lg:col-span-2">
             <div className="flex flex-col text-white">
-              <h3 className="font-serif font-bold text-3xl md:text-4xl">
+              {/* <h3 className="font-serif font-bold text-3xl md:text-4xl">
                 Drop in our office
-              </h3>
+              </h3> */}
 
               <div className="flex my-4 md:w-2/3 lg:w-full">
                 <div className="flex flex-col">
