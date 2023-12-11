@@ -58,7 +58,7 @@ const TopBanner: React.FC = () => {
           <Image
             src={"/images/image-about.png"}
             alt="Profile Picture"
-            width={600}
+            width={400}
             height={400}
             className="max-w-[18rem] lg:max-w-[35rem]"
             />

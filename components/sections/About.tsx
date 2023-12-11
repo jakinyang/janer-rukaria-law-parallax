@@ -49,7 +49,7 @@ const About: React.FC = () => {
           <Image
             src={"/images/image-hero.png"}
             alt="Jane Rukaria profile picture"
-            width={400}
+            width={600}
             height={400}
             className="max-w-md"
           />
