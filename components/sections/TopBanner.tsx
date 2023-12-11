@@ -56,7 +56,7 @@ const TopBanner: React.FC = () => {
 
         <div>
           <Image
-            src={"/images/image-hero.png"}
+            src={"/images/image-about.png"}
             alt="Profile Picture"
             width={600}
             height={400}
