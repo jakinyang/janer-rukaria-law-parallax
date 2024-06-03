@@ -27,7 +27,7 @@ export const immigration = [
     name: "Business Immigration",
     description: "Persons who immigrate to Canada under the Provincial Nominee Program have the skills, education and work experience needed to make an immediate economic contribution to the province or territory that nominates them. They are ready to establish themselves successfully as permanent residents in Canada. To apply under the Provincial Nominee Program, applicants must be nominated by a Canadian province or territory.",
     icon: "/images/temporary-visas.png",
-    link: "hhttps://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees.html"
+    link: "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/provincial-nominees.html"
   },
   {
     name: "Family Sponsorship",
